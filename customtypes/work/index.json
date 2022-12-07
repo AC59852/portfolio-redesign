@@ -51,6 +51,9 @@
             },
             "tri_image_slice": {
               "type": "SharedSlice"
+            },
+            "dual_image_slice": {
+              "type": "SharedSlice"
             }
           }
         }

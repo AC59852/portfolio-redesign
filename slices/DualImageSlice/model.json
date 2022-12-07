@@ -1,0 +1,35 @@
+{
+  "id": "dual_image_slice",
+  "type": "SharedSlice",
+  "name": "DualImageSlice",
+  "description": "DualImageSlice",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "DualImageSlice",
+      "primary": {
+        "dual_image_1": {
+          "type": "Image",
+          "config": {
+            "label": "Dual Image 1",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "dual_image_2": {
+          "type": "Image",
+          "config": {
+            "label": "Dual Image 2",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

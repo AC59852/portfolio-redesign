@@ -1,6 +1,7 @@
 {
   "_cts": {
-    "work": {}
+    "work": {},
+    "work_page": {}
   },
   "slices": {
     "TextSlice": {
@@ -40,6 +41,23 @@
       }
     },
     "TriImageSlice": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "WorkProjectSlice": {
+      "default": {
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "DualImageSlice": {
       "default": {
         "primary": {}
       }

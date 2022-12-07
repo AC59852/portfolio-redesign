@@ -38,7 +38,15 @@ export default {
 
   prismic: {
     endpoint: apiEndpoint,
-    modern: true
+    modern: true,
+    apiOptions: {
+      routes: [
+        {
+          type: 'work_page',
+          path: '/work'
+        }
+      ]
+    }
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
