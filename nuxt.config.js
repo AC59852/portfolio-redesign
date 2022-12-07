@@ -1,3 +1,5 @@
+import { apiEndpoint } from './sm.json'
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -31,9 +33,13 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    // https://go.nuxtjs.dev/eslint
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/prismic'
   ],
+
+  prismic: {
+    endpoint: apiEndpoint,
+    modern: true
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -50,6 +56,6 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    transpile: ['gsap', 'smooth-scrollbar']
+    transpile: ['gsap', 'smooth-scrollbar', '@prismicio/vue']
   }
 }
