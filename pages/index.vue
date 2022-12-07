@@ -34,16 +34,11 @@
 </template>
 
 <script>
-// @ is an alias to /src
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import smoothScroll from '~/mixins/smoothScroll'
 import imageParallax from '~/mixins/imageParallax'
 
-gsap.registerPlugin(ScrollTrigger)
-
 export default {
-  name: 'HomeView',
+  name: 'Home',
 
   head: {
     title: 'Austin Caron - Home',

@@ -5,7 +5,7 @@
       <ul>
         <li><NuxtLink to="/about">About</NuxtLink></li>
         <li><NuxtLink to="/work">Work</NuxtLink></li>
-        <li><NuxtLink to="/contact">Contact</NuxtLink></li>
+        <li><button @click="$nuxt.$emit('openContact')" class="cta__link">Contact Me</button></li>
       </ul>
     </nav>
   </header>

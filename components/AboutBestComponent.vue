@@ -24,7 +24,7 @@ export default {
           description: 'Passionate to the end, pixel-perfect design, and always using new and innovative tech/techniques drive my skillset to new heights.'
         },
         {
-          id: 1,
+          id: 3,
           title: 'Dynamic',
           description: 'From development to personality, I am someone who constantly evolves and takes new ideas and runs with them, stretching my limits to be better.'
         }

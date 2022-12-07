@@ -1,7 +1,7 @@
 <template>
-  <section class="about__hero">
-    <h1>A Bit About Me<span>.</span></h1>
-    <div class="about__rolesContainer">
+  <section :class="`hero ${this.$route.name}__hero`">
+    <h1>{{ heroTitle }}<span>.</span></h1>
+    <div class="about__rolesContainer" v-if="this.$route.name === 'about'">
       <div class="about__roles">
         <h2 class="about__role about__subtitle">Web Developer</h2><span class="about__pipe">|</span>
         <h2 class="about__role about__subtitle">History Lover</h2><span class="about__pipe">|</span>
@@ -13,13 +13,13 @@
         <h2 class="about__role about__subtitle">Experimental</h2><span class="about__pipe">|</span>
       </div>
     </div>
-    <p class="about__para">A lover of all things digital, I strive everyday to enhance my skillset, expand my knowledge on the things I love, and have fun doing it.</p>
+    <p class="about__para">{{ heroPara }}</p>
   </section>
 </template>
 
 <script>
 export default {
-
+  props: ['heroTitle', 'heroPara']
 }
 </script>
 

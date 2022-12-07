@@ -2,7 +2,7 @@
   <section class="about__passions">
     <h2 class="title">What I Love<span>.</span></h2>
     <div class="about__passionsContainer">
-      <img src="" alt="" class="about__img img--medium">
+      <img src="" alt="cycling image of my passions" class="about__img img--medium">
       <div class="about__content" v-for="passion in passions" :key="passion.id">
         <h3 class="subtitle">{{ passion.title }}</h3>
         <p class="about__para para para--small">{{ passion.description }}</p>
