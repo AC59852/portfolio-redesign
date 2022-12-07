@@ -1,7 +1,8 @@
 <template>
-  <section class="section">
-    <PrismicRichText :field="slice.primary.title" class="title" />
-    <PrismicRichText :field="slice.primary.description" />
+  <section class="project__content project__content--text">
+    <PrismicRichText class="title title--project" :field="slice.primary.heading" />
+    <PrismicRichText class="para para--project" :field="slice.primary.description" />
+    <span class="project__sectionName">{{ slice.primary.section_name }}</span>
   </section>
 </template>
 
@@ -14,15 +15,3 @@ export default {
   props: getSliceComponentProps(["slice", "index", "slices", "context"]),
 }
 </script>
-
-<style scoped>
-.section {
-  background: #f7f7f7;
-  color: #111;
-  padding: 4em;
-  text-align: center;
-}
-.title {
-  margin-bottom: 2em;
-}
-</style>

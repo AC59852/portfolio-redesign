@@ -6,6 +6,35 @@ import type * as prismic from "@prismicio/client";
 type Simplify<T> = {
     [KeyType in keyof T]: T[KeyType];
 };
+/** Content for Work Page documents */
+interface WorkPageDocumentData {
+    /**
+     * Slice Zone field in *Work Page*
+     *
+     * - **Field Type**: Slice Zone
+     * - **Placeholder**: *None*
+     * - **API ID Path**: work_page.slices[]
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/slices
+     *
+     */
+    slices: prismicT.SliceZone<WorkPageDocumentDataSlicesSlice>;
+}
+/**
+ * Slice for *Work Page → Slice Zone*
+ *
+ */
+type WorkPageDocumentDataSlicesSlice = WorkProjectSliceSlice;
+/**
+ * Work Page document from Prismic
+ *
+ * - **API ID**: `work_page`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type WorkPageDocument<Lang extends string = string> = prismicT.PrismicDocumentWithoutUID<Simplify<WorkPageDocumentData>, "work_page", Lang>;
 /** Content for Work documents */
 interface WorkDocumentData {
     /**
@@ -57,7 +86,7 @@ interface WorkDocumentData {
  * Slice for *Work → Slice Zone*
  *
  */
-type WorkDocumentDataSlicesSlice = TechSliceSlice | TextSliceSlice | TriImageSliceSlice;
+type WorkDocumentDataSlicesSlice = TechSliceSlice | TextSliceSlice | TriImageSliceSlice | DualImageSliceSlice;
 /**
  * Work document from Prismic
  *
@@ -68,7 +97,56 @@ type WorkDocumentDataSlicesSlice = TechSliceSlice | TextSliceSlice | TriImageSli
  * @typeParam Lang - Language API ID of the document.
  */
 export type WorkDocument<Lang extends string = string> = prismicT.PrismicDocumentWithUID<Simplify<WorkDocumentData>, "work", Lang>;
-export type AllDocumentTypes = WorkDocument;
+export type AllDocumentTypes = WorkPageDocument | WorkDocument;
+/**
+ * Primary content in DualImageSlice → Primary
+ *
+ */
+interface DualImageSliceSliceDefaultPrimary {
+    /**
+     * Dual Image 1 field in *DualImageSlice → Primary*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: dual_image_slice.primary.dual_image_1
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    dual_image_1: prismicT.ImageField<never>;
+    /**
+     * Dual Image 2 field in *DualImageSlice → Primary*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: dual_image_slice.primary.dual_image_2
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    dual_image_2: prismicT.ImageField<never>;
+}
+/**
+ * Default variation for DualImageSlice Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `DualImageSlice`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type DualImageSliceSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<DualImageSliceSliceDefaultPrimary>, never>;
+/**
+ * Slice variation for *DualImageSlice*
+ *
+ */
+type DualImageSliceSliceVariation = DualImageSliceSliceDefault;
+/**
+ * DualImageSlice Shared Slice
+ *
+ * - **API ID**: `dual_image_slice`
+ * - **Description**: `DualImageSlice`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type DualImageSliceSlice = prismicT.SharedSlice<"dual_image_slice", DualImageSliceSliceVariation>;
 /**
  * Primary content in TechSlice → Primary
  *
@@ -256,11 +334,90 @@ type TriImageSliceSliceVariation = TriImageSliceSliceDefault;
  *
  */
 export type TriImageSliceSlice = prismicT.SharedSlice<"tri_image_slice", TriImageSliceSliceVariation>;
+/**
+ * Primary content in WorkProjectSlice → Primary
+ *
+ */
+interface WorkProjectSliceSliceDefaultPrimary {
+    /**
+     * Title field in *WorkProjectSlice → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: This is where it all begins...
+     * - **API ID Path**: work_project_slice.primary.title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.RichTextField;
+    /**
+     * Work Link field in *WorkProjectSlice → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: work_project_slice.primary.work_link
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    work_link: prismicT.KeyTextField;
+    /**
+     * Work Image field in *WorkProjectSlice → Primary*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: work_project_slice.primary.work_image
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    work_image: prismicT.ImageField<never>;
+    /**
+     * Work Year field in *WorkProjectSlice → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: work_project_slice.primary.work_year
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    work_year: prismicT.KeyTextField;
+    /**
+     * Work Role field in *WorkProjectSlice → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: work_project_slice.primary.work_role
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    work_role: prismicT.KeyTextField;
+}
+/**
+ * Default variation for WorkProjectSlice Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `WorkProjectSlice`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type WorkProjectSliceSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<WorkProjectSliceSliceDefaultPrimary>, never>;
+/**
+ * Slice variation for *WorkProjectSlice*
+ *
+ */
+type WorkProjectSliceSliceVariation = WorkProjectSliceSliceDefault;
+/**
+ * WorkProjectSlice Shared Slice
+ *
+ * - **API ID**: `work_project_slice`
+ * - **Description**: `WorkProjectSlice`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type WorkProjectSliceSlice = prismicT.SharedSlice<"work_project_slice", WorkProjectSliceSliceVariation>;
 declare module "@prismicio/client" {
     interface CreateClient {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { WorkDocumentData, WorkDocumentDataSlicesSlice, WorkDocument, AllDocumentTypes, TechSliceSliceDefaultPrimary, TechSliceSliceDefault, TechSliceSliceVariation, TechSliceSlice, TextSliceSliceDefaultPrimary, TextSliceSliceDefault, TextSliceSliceVariation, TextSliceSlice, TriImageSliceSliceDefaultPrimary, TriImageSliceSliceDefault, TriImageSliceSliceVariation, TriImageSliceSlice };
+        export type { WorkPageDocumentData, WorkPageDocumentDataSlicesSlice, WorkPageDocument, WorkDocumentData, WorkDocumentDataSlicesSlice, WorkDocument, AllDocumentTypes, DualImageSliceSliceDefaultPrimary, DualImageSliceSliceDefault, DualImageSliceSliceVariation, DualImageSliceSlice, TechSliceSliceDefaultPrimary, TechSliceSliceDefault, TechSliceSliceVariation, TechSliceSlice, TextSliceSliceDefaultPrimary, TextSliceSliceDefault, TextSliceSliceVariation, TextSliceSlice, TriImageSliceSliceDefaultPrimary, TriImageSliceSliceDefault, TriImageSliceSliceVariation, TriImageSliceSlice, WorkProjectSliceSliceDefaultPrimary, WorkProjectSliceSliceDefault, WorkProjectSliceSliceVariation, WorkProjectSliceSlice };
     }
 }
