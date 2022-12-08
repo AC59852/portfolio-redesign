@@ -1,8 +1,11 @@
 <template>
   <section>
     <NavComponent />
-    <ContactComponent v-if="contact" />
-    <Nuxt />
+    <div id="wrapper">
+      <ContactComponent v-if="contact" />
+      <Nuxt />
+    </div>
+    <FooterComponent />
   </section>
 </template>
 
@@ -31,10 +34,6 @@ export default {
       this.contact = true
     }
   },
-  
-  components: {
-    NavComponent: () => import('~/components/NavComponent.vue')
-  }
 }
 </script>
 

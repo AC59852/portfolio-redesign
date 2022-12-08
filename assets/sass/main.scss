@@ -1,3 +1,9 @@
+// import modules _vars.scss
+@import "./modules/vars";
+@import "./modules/general";
+@import "./modules/home";
+@import "./modules/queries";
+
 #__nuxt {
   width: 100%;
   height: 100vh;
@@ -5,41 +11,4 @@
   top: 0;
   left: 0;
   right: 0;
-}
-
-.image-container {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  background-color: transparent;
-  border-radius: min(30%, 70px);
-
-  &::after {
-    content: "";
-    display: block;
-    padding-bottom: 100%;
-  }
-}
-
-.large-11 {
-  width: min(44%, 850px);
-}
-
-.image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transform: scale(1.25);
-  z-index: -1;
-}
-
-.home {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: min(8vw, 175px) min(5%, 80px);
-  padding: 100px 0;
 }
