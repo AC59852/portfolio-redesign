@@ -1,36 +1,58 @@
 <template>
-  <div class="home">
-    <div class="large-11">
-      <div class="image-container image-one">
-        <h2 class="">Test</h2>
-        <img class="image" src="https://picsum.photos/seed/42/1920/1080" alt="">
+  <section class="home">
+    <section class="hero home__hero">
+      <h1 class="title title--home">
+        <span class="title--home--name">Austin Caron</span>
+        <span class="title--home--role">Front-End</span>
+        <span class="title--home--role title--home--dev">
+          Developer<span class="title--period">.</span>
+        </span>
+      </h1>
+    </section>
+    <section class="home__projects">
+      <div class="home__images home__images--top">
+        <a href="/" target="_blank" class="image-container home__project home__project--left">
+          <div class="home__info">
+            <h2 class="home__project--heading">Patrick Bradley</h2>
+            <span class="home__plus">+</span>
+          </div>
+          <img class="image" src="https://picsum.photos/seed/42/1920/1080" alt="">
+        </a>
+        <a href="/" target="_blank" class="image-container home__project home__project--right">
+          <div class="home__info">
+            <h2 class="home__project--heading">Patrick Bradley</h2>
+            <span class="home__plus">+</span>
+          </div>
+          <img class="image" src="https://picsum.photos/seed/42/1920/1080" alt="">
+        </a>
       </div>
-    </div>
-    <div class="large-11" style="margin-top: auto;">
-      <div class="image-container image-one">
-        <h2 class="">Test</h2>
-        <img class="image" src="https://picsum.photos/seed/43/1920/1080" alt="">
+      <div class="home__images home__images--mid">
+        <a href="/" target="_blank" class="image-container home__project home__project--left">
+          <div class="home__info">
+            <h2 class="home__project--heading">Patrick Bradley</h2>
+            <span class="home__plus">+</span>
+          </div>
+          <img class="image" src="https://picsum.photos/seed/42/1920/1080" alt="">
+        </a>
       </div>
-    </div>
-    <div class="large-11" style="margin-top: 300px;">
-      <div class="image-container image-one">
-        <h2 class="">Test</h2>
-        <img class="image" src="https://picsum.photos/seed/44/1920/1080" alt="">
+      <div class="home__images home__images--bot">
+        <a href="/" target="_blank" class="image-container home__project home__project--right">
+          <div class="home__info">
+            <h2 class="home__project--heading">Patrick Bradley</h2>
+            <span class="home__plus">+</span>
+          </div>
+          <img class="image" src="https://picsum.photos/seed/42/1920/1080" alt="">
+        </a>
+        <a href="/" target="_blank" class="image-container home__project home__project--leftSmall">
+          <div class="home__info">
+            <h2 class="home__project--heading">Patrick Bradley</h2>
+            <span class="home__plus">+</span>
+          </div>
+          <img class="image" src="https://picsum.photos/seed/42/1920/1080" alt="">
+        </a>
       </div>
-    </div>
-    <div class="large-11" >
-      <div class="image-container image-one">
-        <h2 class="">Test</h2>
-        <img class="image" src="https://picsum.photos/seed/45/1920/1080" alt="">
-      </div>
-    </div>
-    <div class="large-11" >
-      <div class="image-container image-one">
-        <h2 class="">Test</h2>
-        <img class="image" src="https://picsum.photos/seed/46/1920/1080" alt="">
-      </div>
-    </div>
-  </div>
+    </section>
+  </section>
 </template>
 
 <script>

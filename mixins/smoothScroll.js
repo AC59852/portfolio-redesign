@@ -8,7 +8,7 @@ export default {
   methods: {
     smoothScroll () {
       const mscrollbar = document.querySelector('#__nuxt')
-      const bodyScrollBar = Scrollbar.init(mscrollbar, { damping: 0.06, delegateTo: document, alwaysShowTracks: true })
+      const bodyScrollBar = Scrollbar.init(mscrollbar, { damping: 0.03, delegateTo: document, alwaysShowTracks: true })
 
       // Tell ScrollTrigger to use these proxy getter/setter methods for the "body" element:
       ScrollTrigger.scrollerProxy(document.body, {

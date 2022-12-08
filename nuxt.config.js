@@ -33,8 +33,17 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    '@nuxtjs/prismic'
+    '@nuxtjs/prismic',
+    '@nuxtjs/google-fonts'
   ],
+
+  googleFonts: {
+    families: {
+      // heebo bold and medium weights
+      Heebo: [400, 500, 700]
+    },
+    display: 'swap'
+  },
 
   prismic: {
     endpoint: apiEndpoint,

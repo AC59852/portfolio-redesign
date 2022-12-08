@@ -1,0 +1,74 @@
+#wrapper {
+  width: 90%;
+  margin: 0 auto;
+  font-family: 'Heebo';
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background-color: transparent;
+  border-radius: min(12%, 70px);
+
+  &::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.3);
+  z-index: -1;
+}
+
+.hero {
+  margin: 100px 0;
+}
+
+.title {
+  color: $primary-black;
+
+  &--period {
+    color: $primary-blue;
+  }
+
+  &--home {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    width: min(100%, 460px);
+    margin: 0 auto;
+
+    &--name {
+      font-size: 33px;
+    }
+
+    &--role {
+      font-size: 62px;
+    }
+
+    &--dev {
+      align-self: center;
+      margin-left: auto;
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 33%;
+        height: 5px;
+        background-color: $primary-blue;
+        margin-top: 7px;
+      }
+    }
+  }
+}

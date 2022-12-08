@@ -1,0 +1,17 @@
+@media screen and (min-width: 400px) {
+  .title {
+    &--home {
+      &--name {
+        font-size: 34px;
+      }
+
+      &--role {
+        font-size: 68px;
+      }
+    }
+  }
+
+  .hero {
+    margin: 120px 0;
+  }
+}
