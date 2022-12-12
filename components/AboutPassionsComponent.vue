@@ -1,11 +1,13 @@
 <template>
   <section class="about__passions">
-    <h2 class="title">What I Love<span>.</span></h2>
-    <div class="about__passionsContainer">
+    <h2 class="title">What I Love<span class="title--period">.</span></h2>
+    <div class="about__container--passions">
       <img src="" alt="cycling image of my passions" class="about__img img--medium">
-      <div class="about__content" v-for="passion in passions" :key="passion.id">
-        <h3 class="subtitle">{{ passion.title }}</h3>
-        <p class="about__para para para--small">{{ passion.description }}</p>
+      <div class="about__container">
+        <div class="about__content" v-for="passion in passions" :key="passion.id">
+          <h3 class="about__subtitle">{{ passion.title }}</h3>
+          <p class="about__para para para--small">{{ passion.description }}</p>
+        </div>
       </div>
     </div>
   </section>

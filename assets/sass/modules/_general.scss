@@ -1,5 +1,5 @@
 #wrapper {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
   font-family: 'Heebo';
 }
@@ -35,6 +35,9 @@
 
 .title {
   color: $primary-black;
+  font-size: 56px;
+  font-weight: bold;
+  line-height: 97.9%;
 
   &--period {
     color: $primary-blue;
@@ -52,7 +55,7 @@
     }
 
     &--role {
-      font-size: 62px;
+      font-size: 63px;
     }
 
     &--dev {
@@ -65,10 +68,18 @@
         content: "";
         display: block;
         width: 33%;
-        height: 5px;
+        height: 6px;
         background-color: $primary-blue;
         margin-top: 7px;
       }
     }
   }
+
+  &--about {
+    margin-bottom: 11px;
+  }
+}
+
+.pipe {
+  color: $primary-blue;
 }

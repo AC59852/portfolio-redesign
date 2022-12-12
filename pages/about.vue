@@ -19,7 +19,7 @@ export default {
   data() {
     return {
       title: 'A Bit About Me',
-      para: 'A lover of all things digital, I strive everyday to enhance my skillset, expand my knowledge on the things I love, and have fun doing it',
+      para: 'A lover of all things digital, I strive everyday to enhance my skillset, expand my knowledge on the things I love, and have fun doing it.',
       ctaLink: {
           name: 'My Work',
           route: 'work'

@@ -7,8 +7,25 @@ gsap.registerPlugin(ScrollTrigger)
 export default {
   methods: {
     smoothScroll () {
-      const mscrollbar = document.querySelector('#__nuxt')
-      const bodyScrollBar = Scrollbar.init(mscrollbar, { damping: 0.03, delegateTo: document, alwaysShowTracks: true })
+      var fixedElem = document.getElementById('nav');
+
+      var bodyScrollBar = Scrollbar.init(
+        document.getElementById('__nuxt'),
+        { damping: 0.02, delegateTo: document, alwaysShowTracks: true }
+      );
+
+      bodyScrollBar.addListener(function(status) {
+        var offset = status.offset;
+
+        if(offset.y >= 50) {
+          fixedElem.classList.add('nav--dark');
+        } else {
+          fixedElem.classList.remove('nav--dark');
+        }
+        
+        fixedElem.style.top = offset.y + 'px';
+        fixedElem.style.left = offset.x + 'px';
+      });
 
       // Tell ScrollTrigger to use these proxy getter/setter methods for the "body" element:
       ScrollTrigger.scrollerProxy(document.body, {

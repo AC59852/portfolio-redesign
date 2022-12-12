@@ -1,9 +1,11 @@
 <template>
   <section class="about__best">
-    <h2 class="title">What I Do Best<span>.</span></h2>
-    <div v-for="talent in talents" :key="talent.id" class="about__talents about__content">
-      <h3 class="subtitle">{{ talent.title }}</h3>
-      <p class="about__para para para--small">{{ talent.description }}</p>
+    <h2 class="title">What I Do Best<span class="title--period">.</span></h2>
+    <div class="about__container">
+      <div v-for="talent in talents" :key="talent.id" class="about__talents about__content">
+        <h3 class="about__subtitle">{{ talent.title }}</h3>
+        <p class="about__para para para--small">{{ talent.description }}</p>
+      </div>
     </div>
   </section>
 </template>
