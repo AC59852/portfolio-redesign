@@ -1,0 +1,91 @@
+#about {
+  display: flex;
+  flex-direction: column;
+  gap: 125px;
+}
+
+.about {
+
+  &__rolesContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 28px;
+  }
+
+  &__roles {
+    display: flex;
+    gap: 9px;
+    font-weight: bold;
+    font-size: 16px;
+    color: $primary-black;
+  }
+
+  &__para {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    width: 86%;
+    color: $primary-black;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 39px;
+    margin-top: 39px;
+  }
+
+  &__subtitle {
+    font-weight: bold;
+    color: $primary-black;
+    font-size: 32px;
+    position: relative;
+    margin-bottom: 26px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 46px;
+      height: 3px;
+      background-color: $primary-blue;
+      bottom: -13px;
+    }
+  }
+
+  &__techContainer {
+    display: flex;
+    gap: 34px;
+    font-weight: 500;
+    color: $primary-black;
+    font-size: 16px;
+    position: relative;
+    margin: 40px 0;
+
+    &::before, &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 84px;
+      height: 3px;
+      background-color: $primary-blue;
+    }
+
+    &::before {
+      top: -20px;
+      left: 0;
+    }
+
+    &::after {
+      bottom: -20px;
+      right: 12px;
+    }
+  }
+
+  &__techs {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
