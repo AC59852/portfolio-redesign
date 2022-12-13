@@ -1,5 +1,5 @@
 #wrapper {
-  width: 85%;
+  width: 88%;
   margin: 0 auto;
   font-family: 'Heebo';
 }
@@ -31,6 +31,11 @@
 
 .hero {
   margin: 100px 0;
+
+  &__image {
+    margin-top: 35px;
+    transform: scale(1.05);
+  }
 }
 
 .title {
@@ -38,6 +43,7 @@
   font-size: 56px;
   font-weight: bold;
   line-height: 97.9%;
+  margin-bottom: 13px;
 
   &--period {
     color: $primary-blue;
@@ -82,4 +88,12 @@
 
 .pipe {
   color: $primary-blue;
+}
+
+.subtitle {
+  color: $primary-black;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+  width: 80%;
 }
