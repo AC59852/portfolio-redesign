@@ -59,22 +59,46 @@
     }
   }
 
-  &__links {
+  &__list {
     display: flex;
     flex-direction: column;
     height: 100%;
     width: 86%;
     position: relative;
     background-color: $primary-white;
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto 0 40px 0;
+    height: 100%;
+    gap: 40px;
   }
 
   &__link {
     text-decoration: none;
     color: $primary-black;
     font-weight: bold;
+    font-size: 42px;
 
     &--name {
       font-size: 20px;
+    }
+  }
+
+  &__socials {
+    margin-bottom: 25px;
+    a {
+      color: $primary-black;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 15px;
+      margin: 0 6px;
+      width: 100%;
     }
   }
 

@@ -10,12 +10,20 @@
     </div>
     <transition name="nav__menu">
       <nav v-if="navOpen" class="nav__menu">
-        <ul class="nav__links">
-          <li @click="toggleNav()"><button class="nav__close" aria-label="Button to Close the Navigation Menu">X</button></li>
-          <li @click="toggleNav()"><NuxtLink to="/about" class="nav__link">About</NuxtLink></li>
-          <li @click="toggleNav()"><NuxtLink to="/work" class="nav__link">Work</NuxtLink></li>
-          <li><button @click="$nuxt.$emit('openContact')" class="nav__link">Contact Me</button></li>
-        </ul>
+        <div class="nav__list">
+          <ul class="nav__links">
+            <li @click="toggleNav()"><button class="nav__close" aria-label="Button to Close the Navigation Menu">X</button></li>
+            <li @click="toggleNav()"><NuxtLink to="/about" class="nav__link">About Me<span class="title--period">.</span></NuxtLink></li>
+            <li @click="toggleNav()"><NuxtLink to="/work" class="nav__link">My Work<span class="title--period">.</span></NuxtLink></li>
+            <li @click="toggleNav()"><NuxtLink to="/packages" class="nav__link">My Services<span class="title--period">.</span></NuxtLink></li>
+            <li @click="toggleNav()"><NuxtLink to="/contact" class="nav__link">Contact Me<span class="title--period">.</span></NuxtLink></li>
+          </ul>
+          <div class="nav__socials">
+            <a href="https://linkedin.com/in/austincaron" target="_blank">LinkedIn</a>
+            <a href="https://github.com/AC59852" target="_blank">GitHub</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+          </div>
+        </div>
       </nav>
     </transition>
   </header>

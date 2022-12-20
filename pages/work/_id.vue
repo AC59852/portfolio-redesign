@@ -22,6 +22,8 @@ import { components } from '~/slices'
 export default {
   mixins: [smoothScroll, imageParallax],
 
+  scrollToTop: true,
+
   // prismic fetch
   async asyncData({ $prismic, params, error }) {
     try {
@@ -61,7 +63,7 @@ export default {
 
     this.smoothScroll()
     this.imageParallax()
-  }
+  },
   
 }
 </script>

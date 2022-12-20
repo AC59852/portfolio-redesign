@@ -1,10 +1,12 @@
 <template>
   <section class="project__images project__images--dual">
-    <div class="image-container">
-      <PrismicImage :field="slice.primary.dual_image_1" class="image" />
-    </div>
-    <div class="image-container">
-      <PrismicImage :field="slice.primary.dual_image_2" class="image" />
+    <div class="project__scroll">
+      <div class="image-container image-container--project">
+        <PrismicImage :field="slice.primary.dual_image_1" class="image" />
+      </div>
+      <div class="image-container image-container--project">
+        <PrismicImage :field="slice.primary.dual_image_2" class="image" />
+      </div>
     </div>
   </section>
 </template>

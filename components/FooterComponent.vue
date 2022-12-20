@@ -1,26 +1,25 @@
 <template>
   <footer id="footer" class="footer">
-    <section class="home__footer" v-if="this.$route.name === 'index'">
-      <div class="home__cta">
+    <section class="footer--home" v-if="this.$route.name === 'index'">
+      <div class="footer__cta">
         <h2>Let's Get In Touch</h2>
-        <span class="home__line"></span>
         <h3>I'd Love to Work With You</h3>
       </div>
-      <div class="home__footerWrapper">
-        <ul class="home__roles">
-          <li class="home__role">Full-Time</li>
-          <li class="home__role">Part-Time</li>
-          <li class="home__role">Freelance</li>
+      <div class="footer__wrapper">
+        <ul class="footer__roles">
+          <li class="footer__role">Full-Time</li>
+          <li class="footer__role">Part-Time</li>
+          <li class="footer__role">Freelance</li>
         </ul>
-        <ul class="home__socials">
-          <li class="home__social"><a href="" target="_blank">LinkedIn</a></li>
-          <li class="home__social"><a href="" target="_blank">GitHub</a></li>
-          <li class="home__social"><a href="" target="_blank">Instagram</a></li>
+        <ul class="footer__socials">
+          <li class="footer__social"><a href="" target="_blank">LinkedIn</a></li>
+          <li class="footer__social"><a href="" target="_blank">GitHub</a></li>
+          <li class="footer__social"><a href="" target="_blank">Instagram</a></li>
         </ul>
       </div>
-      <div class="home__buttons">
-        <button @click="$nuxt.$emit('openContact')" class="home__button home__button--contact">Contact Me</button>
-        <a href="" target="_blank" class="home__button home__button--resume">Resume</a>
+      <div class="footer__buttons">
+        <NuxtLink to="/contact" class="footer__button footer__button--contact">Contact</NuxtLink>
+        <a href="" target="_blank" class="footer__button footer__button--resume">Resume</a>
       </div>
     </section>
     <section class="footer__content">

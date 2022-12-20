@@ -6,6 +6,10 @@
     gap: 60px 0;
   }
 
+  &__projects {
+    margin-bottom: 100px;
+  }
+
   &__project {
     display: flex;
     width: min(93%, 633px);
