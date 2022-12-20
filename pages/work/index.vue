@@ -1,18 +1,20 @@
 <template>
   <section id="work" class="work">
     <HeroComponent :heroTitle="title" :heroPara="para"/>
-    <NuxtLink v-for="(item, index) in work.data.slices" 
-    :key="index"
-    :to="`/work/${item.primary.work_link}`"
-    >
-      <!-- image -->
-      <div class="large-11">
-        <PrismicRichText :field="item.primary.title" />
-        <div class="image-container">
-          <prismic-image :field="item.primary.work_image" class="image" />
+    <section class="home__images">
+      <NuxtLink v-for="(item, index) in work.data.slices"
+      :key="index"
+      :to="`/work/${item.primary.work_link}`"
+      class="home__project image-container"
+      >
+        <!-- image -->
+        <div class="home__info">
+          <h2 class="home__project--heading">{{item.primary.title[0].text}}</h2>
+          <span class="home__plus">+</span>
         </div>
-      </div>
-    </NuxtLink>
+        <prismic-image :field="item.primary.work_image" class="image" />
+      </NuxtLink>
+    </section>
     <CtaComponent :link="ctaLink"/>
   </section>
 </template>

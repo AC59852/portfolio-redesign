@@ -14,6 +14,9 @@ export default {
         { damping: 0.02, delegateTo: document, alwaysShowTracks: true }
       );
 
+      // set the scrollbar to the top
+      bodyScrollBar.setPosition(0, 0)
+
       bodyScrollBar.addListener(function(status) {
         var offset = status.offset;
 

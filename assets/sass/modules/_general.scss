@@ -1,5 +1,5 @@
 #wrapper {
-  width: 85%;
+  width: 88%;
   margin: 0 auto;
   font-family: 'Heebo';
 }
@@ -31,6 +31,11 @@
 
 .hero {
   margin: 100px 0;
+
+  &__image {
+    margin-top: 75px;
+    transform: scale(1.05);
+  }
 }
 
 .title {
@@ -38,6 +43,11 @@
   font-size: 56px;
   font-weight: bold;
   line-height: 97.9%;
+  margin-bottom: 13px;
+
+  &--cta {
+    margin-bottom: 29px;
+  }
 
   &--period {
     color: $primary-blue;
@@ -82,4 +92,44 @@
 
 .pipe {
   color: $primary-blue;
+}
+
+.subtitle {
+  color: $primary-black;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+  width: 80%;
+}
+
+.para {
+  line-height: 140%;
+  color: $primary-black;
+  font-weight: 500;
+
+  &--project {
+    width: 85%;
+  }
+}
+
+.cta {
+  margin-bottom: 80px;
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+  }
+
+  &__link {
+    color: $primary-black;
+    font-weight: bold;
+    font-size: 34px;
+    text-decoration: none;
+    display: flex;
+  }
+
+  &__arrow {
+    width: 30px;
+    margin-left: 12px;
+  }
 }

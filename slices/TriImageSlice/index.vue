@@ -1,19 +1,15 @@
 <template>
   <section class="project__images project__images--tri">
-    <div class="large-11">
-      <div class="image-container">
+    <div class="project__scroll">
+      <div class="image-container image-container--project">
         <PrismicImage :field="slice.primary.small_image_1" class="image" />
       </div>
-    </div>
-    <div class="large-11">
-      <div class="image-container">
+      <div class="image-container image-container--project">
         <PrismicImage :field="slice.primary.small_image_2" class="image" />
       </div>
-    </div>
-    <div class="large-11">
-      <div class="image-container">
+      <div class="image-container image-container--project">
         <PrismicImage :field="slice.primary.small_image_3" class="image" />
-      </div>
+    </div>
     </div>
   </section>
 </template>
