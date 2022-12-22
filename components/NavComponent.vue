@@ -9,7 +9,7 @@
       </div>
     </div>
     <transition name="nav__menu">
-      <nav v-if="navOpen" class="nav__menu">
+      <nav v-show="navOpen" class="nav__menu">
         <div class="nav__list">
           <ul class="nav__links">
             <li @click="toggleNav()"><button class="nav__close" aria-label="Button to Close the Navigation Menu">X</button></li>
@@ -36,6 +36,22 @@ export default {
   data() {
     return {
       navOpen: false
+    }
+  },
+
+  mounted() {
+    if(window.innerWidth < 768) {
+      // get the viewport height in pixels
+      const vh = window.innerHeight;
+
+      // set __nuxt to the same height
+      document.querySelector('.nav__menu').style.height = `${vh}px`;
+
+      // on resize, set __nuxt to the same height
+      window.addEventListener('resize', () => {
+        const vh = window.innerHeight;
+        document.querySelector('.nav__menu').style.height = `${vh}px`;
+      });
     }
   },
 

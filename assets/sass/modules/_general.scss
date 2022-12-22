@@ -57,7 +57,7 @@
     font-weight: bold;
     display: flex;
     flex-direction: column;
-    width: min(100%, 460px);
+    width: min(100%, 960px);
     margin: 0 auto;
 
     &--name {
@@ -89,6 +89,10 @@
     margin-bottom: 11px;
   }
 }
+
+span.title--home--role:nth-child(3) {
+  margin-top: 20px;
+} 
 
 .pipe {
   color: $primary-blue;

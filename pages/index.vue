@@ -75,7 +75,18 @@ export default {
 
   mixins: [smoothScroll, imageParallax],
 
+  data() {
+    return {
+      mobile: false
+    }
+  },
+
   mounted () {
+
+    if (window.innerWidth < 768) {
+      document.querySelector("#__nuxt").style.height = "100%"
+    }
+    
     this.smoothScroll()
     this.imageParallax()
   }

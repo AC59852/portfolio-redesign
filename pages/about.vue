@@ -28,7 +28,9 @@ export default {
   },
 
   mounted() {
-    console.log(this.$route)
+    if (window.innerWidth < 768) {
+      document.querySelector("#__nuxt").style.height = "100%"
+    }
 
     this.smoothScroll()
   },

@@ -18,6 +18,11 @@ export default {
     ]
   },
 
+  // allow connection from localhost
+  server: {
+    host: '0.0.0.0'
+  },
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '~/assets/css/reset.css',
