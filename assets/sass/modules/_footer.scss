@@ -20,21 +20,21 @@
       font-size: 28px;
       text-transform: uppercase;
       font-weight: bold;
+    }
+
+    h3 {
+      font-weight: 500;
       position: relative;
 
-      &::after {
+      &::before {
         content: '';
         position: absolute;
-        bottom: -12px;
+        top: -13px;
         width: min(37%, 343px);
         left: 0;
         height: 2px;
         background-color: $primary-blue;
       }
-    }
-
-    h3 {
-      font-weight: 500;
     }
   }
 

@@ -99,8 +99,8 @@
 
       h2 {
         margin: auto 0 35px 0;
-        font-size: 22px;
-        padding: 24px min(8%, 150px);
+        font-size: 20px;
+        padding: 20px min(7%, 150px);
       }
     }
 
@@ -109,8 +109,8 @@
     }
 
     &__plus {
-      width: 49px;
-      height: 49px;
+      width: 50px;
+      height: 50px;
       font-size: 28px;
       margin: auto 0 45px 0;
     }
@@ -124,7 +124,58 @@
     }
   }
 
-  .iamge-container {
+  .image-container {
     border-radius: min(9%, 70px);
+  }
+
+  .footer {
+    &__cta {
+      gap: 12px;
+      align-items: center;
+      margin: 0 auto 24px;
+      max-width: 586px;
+
+      h2 { font-size: 62px; }
+
+      h3 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        font-size: 19px;
+        
+        &::before {
+          width: min(61%, 353px);
+          height: 3px;
+          left: 0;
+          top: initial;
+        }
+      }
+    }
+
+    &--home {
+      margin: 50px auto 60px;
+      width: 76%;
+    }
+
+    &__roles, &__socials {
+      margin: 19px auto;
+      font-size: 18px;
+      max-width: 586px;
+    }
+
+    &__buttons {
+      margin: 60px 0 0;
+    }
+
+    &__button {
+      width: 190px;
+      padding: 21px 0;
+      font-size: 21px;
+    }
+
+    &__content {
+      font-size: 16px;
+    }
   }
 }
