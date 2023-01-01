@@ -2,7 +2,6 @@
   <section>
     <NavComponent />
     <div id="wrapper">
-      <ContactComponent v-if="contact" />
       <Nuxt />
     </div>
     <FooterComponent />
@@ -10,29 +9,32 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 export default {
   name: 'Default',
 
-  data() {
-    return {
-      contact: false
-    }
-  },
+  mounted() {
+    // // get the viewport height in pixels
+    // const vh = window.innerHeight;
 
-  created() {
-    this.$nuxt.$on('openContact', () => {
-      this.loadContact()
-    })
+    // this.setVh(vh);
 
-    this.$nuxt.$on('closeContact', () => {
-      this.contact = false
-    })
+    // alert(vh);
+
+    // // set __nuxt to the same height
+    // document.getElementById('__nuxt').style.height = `${vh}px`;
+
+    // // on resize, set __nuxt to the same height
+    // window.addEventListener('resize', () => {
+    //   const vh = window.innerHeight;
+    //   document.getElementById('__nuxt').style.height = `${vh}px`;
+    // });
   },
 
   methods: {
-    loadContact() {
-      this.contact = true
-    }
+    setVh(vh) {
+      this.$store.commit('setVh', vh);
+    },
   },
 }
 </script>
