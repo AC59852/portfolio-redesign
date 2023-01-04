@@ -1,6 +1,6 @@
 <template>
   <section class="about__best">
-    <h2 class="title">What I Do Best<span class="title--period">.</span></h2>
+    <h2 class="title title--about">What I Do Best<span class="title--period">.</span></h2>
     <div class="about__container">
       <div v-for="talent in talents" :key="talent.id" class="about__talents about__content">
         <h3 class="about__subtitle">{{ talent.title }}</h3>

@@ -1,16 +1,16 @@
 <template>
   <section id="work" class="work">
     <HeroComponent :heroTitle="title" :heroPara="para"/>
-    <section class="home__images">
+    <section class="home__images work__images">
       <NuxtLink v-for="(item, index) in work.data.slices"
       :key="index"
       :to="`/work/${item.primary.work_link}`"
-      class="home__project image-container"
+      class="home__project work__project image-container"
       >
         <!-- image -->
-        <div class="home__info">
-          <h2 class="home__project--heading">{{item.primary.title[0].text}}</h2>
-          <span class="home__plus">+</span>
+        <div class="home__info work__info">
+          <h2 class="home__project--heading work__project--heading">{{item.primary.title[0].text}}</h2>
+          <span class="home__plus work__plus">+</span>
         </div>
         <prismic-image :field="item.primary.work_image" class="image" />
       </NuxtLink>
