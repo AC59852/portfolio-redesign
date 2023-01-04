@@ -53,6 +53,13 @@ export default {
         document.querySelector('.nav__menu').style.height = `${vh}px`;
       });
     }
+
+    // when clicking anywhere that isnt nav__list or nav__button, close the nav
+    document.addEventListener('click', (e) => {
+      if(!e.target.closest('.nav__list') && !e.target.closest('.nav__button') && this.navOpen) {
+        this.navOpen = false
+      }
+    })
   },
 
   methods: {

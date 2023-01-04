@@ -1,6 +1,6 @@
 <template>
   <section class="about__tech">
-    <h2 class="title title--about">How I Do It<span class="title--period">.</span></h2>
+    <h2 class="title title--about title--about--techs">How I Do It<span class="title--period">.</span></h2>
     <div class="about__techContainer">
       <ul v-for="techGroup in techGroups" class="about__techs" :key="techGroup.id">
         <li v-for="tech in techGroup.techs" :key="tech.id" class="about__techItem">

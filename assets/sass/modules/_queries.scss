@@ -17,6 +17,17 @@
 }
 
 @media screen and (min-width: 768px) {
+  .hero {
+    margin: 170px 0;
+
+    &--project {
+      .image-container {
+        width: 86%;
+        margin: 100px auto;
+      }
+    }
+  }
+
   .nav {
     &__wrapper {
       padding: 18px 25px;
@@ -59,6 +70,7 @@
   }
 
   .title {
+    font-size: 110px;
     &--home {
       &--name {
         font-size: 56px;
@@ -68,21 +80,35 @@
         font-size: 120px;
       }
 
+      &--about {
+        margin-bottom: 20px;
+        font-size: 100px;
+        width: 72%;
+      }
+
       &--dev {
         &::after {
           height: 11px;
-          margin-top: 40px;
+          margin-top: 30px;
         }
       }
     }
   }
 
+  .para {
+    &--project {
+      width: 90%;
+      font-size: 22px;
+      max-width: 724px;
+    }
+  }
+
   span.title--home--role:nth-child(2) {
-    margin: 40px 0 0;
+    margin: 10px 0 0;
   }
 
   span.title--home--role:nth-child(3) {
-    margin-top: 70px;
+    margin-top: 30px;
   }
 
   .home {
@@ -119,8 +145,8 @@
       gap: 150px 0;
     }
 
-    .hero {
-      margin: 222px 0 276px;
+    &__hero {
+      margin: 240px 0 280px;
     }
   }
 
@@ -178,4 +204,286 @@
       font-size: 16px;
     }
   }
+
+  #about { gap: 290px; }
+
+  .about {
+    &__roles { font-size: 34px; }
+
+    &__para { font-size: 23px; }
+
+    &__subtitle { font-size: 40px; }
+
+    &__container { 
+      gap: 50px;
+      margin-top: 60px; 
+    }
+
+    &__hero {
+      margin-bottom: 100px;
+    }
+
+    &__techContainer {
+      gap: 48px;
+      margin: 80px auto;
+      max-width: 900px;
+
+      &::before, &::after {
+        width: 75px;
+      }
+
+      &::before {
+        top: -35px;
+      }
+
+      &::after {
+        bottom: -35px;
+        right: 0;
+      }
+    }
+
+    &__techs {
+      gap: 22px;
+      font-size: 21px;
+    }
+  }
+
+  .para--small {
+    font-size: 18px;
+  }
+
+  .work {
+    &__images {
+      margin-bottom: 290px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 25px;
+    }
+
+    .image-container {
+      border-radius: min(13%, 70px);
+      width: min(48%, 633px);
+    }
+
+    &__info {
+      padding: 0 22px;
+
+      h2 {
+        margin-bottom: 25px;
+        font-size: 18px;
+        padding: 18px min(7%, 150px);
+      }
+    }
+
+    &__plus {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .project {
+    
+    .title { 
+      margin-bottom: 45px;
+    }
+    
+    .subtitle {
+      font-size: 24px;
+    }
+
+    &__content {
+      margin: 300px 0;
+
+      .title { 
+        font-size: 90px;
+        margin-bottom: 33px; 
+      }
+    }
+
+    &__images {
+      &--dual {
+        margin-top: -225px;
+
+        .project__scroll {
+          flex-direction: column;
+          gap: 70px;
+        }
+      }
+
+      &--tri {
+        margin-top: -195px;
+        .image-container--project {
+          width: 310px;
+        }
+        .project-scroll {
+          flex-direction: row;
+          gap: 45px;
+        }
+      }
+    }
+
+    &__images:nth-child(2) > div:nth-child(1) > div:nth-child(1) {
+      margin-left: 15px;
+      width: 387px;
+    }
+
+    &__images:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
+      margin-left: auto;
+      margin-right: 84px;
+      width: 329px;
+    }
+
+    &__techUsed {
+      font-size: 22px;
+    }
+  }
+
+  .cta {
+    &__links {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__arrow {
+      display: flex;
+    }
+  }
+}
+
+@media screen and (min-width: 825px) {
+  .nav {
+    &__list {
+      width: 71%;
+      max-width: 645px;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  span.title--home--role:nth-child(2) {
+    margin:20px 0 0;
+   }
+
+   span.title--home--role:nth-child(3) {
+    margin-top:40px;
+   }   
+
+  .title {
+    &--home {
+      width: min(100%, 1045px);
+      &--name {
+        font-size: 80px;
+      }
+
+      &--role {
+        font-size: 140px;
+      }
+
+      &--dev {
+        &::after {
+          margin-top: 0;
+          width: 115px;
+          top: 50%;
+          left: -23%;
+        }
+      }
+    }
+
+    &--about {
+      width: 572px;
+
+      &--techs, &--passions {
+        width: 499px;
+      }
+    }
+  }
+
+  .about {
+    &__techContainer {
+      gap: 88px;
+
+      &::before, &::after {
+        width: 130px;
+      }
+    }
+
+    &__techs {
+      font-size: 22px;
+      gap: 32px;
+    }
+  }
+}
+
+// nav mw: 691px
+
+@media screen and (min-width: 1360px) {
+  .hero {
+    margin: 245px 0;
+  }
+
+  .para {
+    &--small {
+      font-size: 20px;
+    }
+  }
+
+  #about {
+    gap: 350px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .about {
+    &__container {
+      margin-top: 120px;
+      gap: 50px;
+      flex-direction: row;
+    }
+
+    &__hero {
+      .about__para {
+        width: 690px;
+      }
+    }
+
+    &__content {
+      width: 410px;
+    }
+
+    &__techContainer {
+      margin: 125px auto;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+
+  .title {
+    &--about {
+      margin-bottom: 29px;
+    }
+  }
+
+  .about {
+
+    &__rolesContainer {
+      gap: 10px;
+      margin-bottom: 33px;
+    }
+
+    &__subtitle {
+      margin-bottom: 34px;
+
+      &::after {
+        bottom: -16px;
+      }
+    }
+
+    &__para {
+      width: 85%;
+    }
+  }
+
+
 }

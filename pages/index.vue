@@ -5,7 +5,7 @@
         <span class="title--home--name">Austin Caron</span>
         <span class="title--home--role">Front-End</span>
         <span class="title--home--role title--home--dev">
-          Developer<span class="title--period">.</span>
+          Developer
         </span>
       </h1>
     </section>
