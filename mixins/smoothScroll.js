@@ -11,7 +11,7 @@ export default {
 
       var bodyScrollBar = Scrollbar.init(
         document.getElementById('__nuxt'),
-        { damping: 0.02, delegateTo: document, alwaysShowTracks: true, renderByPixels: true, continuousScrolling: true }
+        { damping: 0.05, delegateTo: document, alwaysShowTracks: true, renderByPixels: true, continuousScrolling: true }
       );
 
       // set the scrollbar to the top
