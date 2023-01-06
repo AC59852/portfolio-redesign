@@ -19,10 +19,10 @@ export default {
         })
 
         tl.from(image, {
-          yPercent: -35,
+          yPercent: -25,
           ease: 'none'
         }).to(image, {
-          yPercent: 35,
+          yPercent: 25,
           ease: 'none'
         })
       })
