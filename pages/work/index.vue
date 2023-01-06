@@ -50,7 +50,7 @@ export default {
       ctaLink: {
           name: 'About Me',
           route: 'about'
-        }
+      }
     }
   },
 
