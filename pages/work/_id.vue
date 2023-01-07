@@ -34,6 +34,49 @@ export default {
     }
   },
 
+  head() {
+    return {
+      title: `Austin Caron - ${this.work.data.title[0].text}`,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.work.data.subtitle[0].text
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: `Austin Caron - ${this.work.data.title[0].text}`
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: this.work.data.subtitle[0].text
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: this.work.data.big_image.url
+        },
+        {
+          hid: 'twitter:title',
+          property: 'twitter:title',
+          content: `Austin Caron - ${this.work.data.title[0].text}`
+        },
+        {
+          hid: 'twitter:description',
+          property: 'twitter:description',
+          content: this.work.data.subtitle[0].text
+        },
+        {
+          hid: 'twitter:image',
+          property: 'twitter:image',
+          content: this.work.data.big_image.url
+        }
+      ]
+    }
+  },
+
   data() {
     return {
       components,
@@ -63,7 +106,21 @@ export default {
 
     this.smoothScroll()
     this.imageParallax()
+    this.checkPara()
   },
+
+  methods: {
+    checkPara() {
+      const paras = document.querySelectorAll('.para--project p')
+
+      paras.forEach(para => {
+        if (para.innerHTML === '' || para.innerHTML === null) {
+          console.log(para.innerHTML)
+          para.innerHTML += '<br>'
+        }
+      })
+    }
+  }
   
 }
 </script>

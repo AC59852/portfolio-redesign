@@ -43,6 +43,57 @@ export default {
     }
   },
 
+  head: {
+    title: 'Austin Caron - My Work',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: `My proudest work. I have worked on many projects, both personal and professional. I'm sure you'll find something you like!`
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'Austin Caron - My Work'
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: `My proudest work. I have worked on many projects, both personal and professional. I'm sure you'll find something you like!`
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: 'https://dl.dropboxusercontent.com/s/bjqdtto0bo14jqf/og_image.png?dl=0'
+      },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: 'https://austincaron.com'
+      },
+      {
+        hid: 'twitter:title',
+        property: 'twitter:title',
+        content: 'Austin Caron - My Work'
+      },
+      {
+        hid: 'twitter:description',
+        property: 'twitter:description',
+        content: `My proudest work. I have worked on many projects, both personal and professional. I'm sure you'll find something you like!`
+      },
+      {
+        hid: 'twitter:image',
+        property: 'twitter:image',
+        content: 'https://dl.dropboxusercontent.com/s/bjqdtto0bo14jqf/og_image.png?dl=0'
+      },
+      {
+        hid: 'twitter:card',
+        property: 'twitter:card',
+        content: 'summary_large_image'
+      }
+    ]
+  },
+
   data() {
     return {
       title: 'My Best Work',
