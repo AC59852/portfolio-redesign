@@ -38,10 +38,10 @@
       <div class="home__images home__images--bot">
         <a href="/" target="_blank" class="image-container home__project home__project--right">
           <div class="home__info">
-            <h2 class="home__project--heading">Patrick Bradley</h2>
+            <h2 class="home__project--heading">Dodds Family Smithy</h2>
             <span class="home__plus">+</span>
           </div>
-          <img class="image" src="https://picsum.photos/seed/42/1920/1080" alt="">
+          <img class="image" src="https://images.prismic.io/new-portfolio-ac/03ded026-b627-46e9-a873-46f715ea1a78_dodds_preview.jpg?auto=compress,format" alt="">
         </a>
         <a href="https://ac59852.github.io/toksan-anime/" target="_blank" class="image-container home__project home__project--leftSmall">
           <div class="home__info">
@@ -68,7 +68,47 @@ export default {
       {
         hid: 'description',
         name: 'description',
+        content: `I'm Austin Caron! I'm a freelance front-end developer who loves to create beautiful, responsive websites. I have in-depth knowledge of plenty of web technologies, and can't want to work with you!`
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
         content: 'Austin Caron - Home'
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: `I'm Austin Caron! I'm a freelance front-end developer who loves to create beautiful, responsive websites. I have in-depth knowledge of plenty of web technologies, and can't want to work with you!`
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: 'https://dl.dropboxusercontent.com/s/bjqdtto0bo14jqf/og_image.png?dl=0'
+      },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: 'https://austincaron.com'
+      },
+      {
+        hid: 'twitter:title',
+        property: 'twitter:title',
+        content: 'Austin Caron - Home'
+      },
+      {
+        hid: 'twitter:description',
+        property: 'twitter:description',
+        content: `I'm Austin Caron! I'm a freelance front-end developer who loves to create beautiful, responsive websites. I have in-depth knowledge of plenty of web technologies, and can't want to work with you!`
+      },
+      {
+        hid: 'twitter:image',
+        property: 'twitter:image',
+        content: 'https://dl.dropboxusercontent.com/s/bjqdtto0bo14jqf/og_image.png?dl=0'
+      },
+      {
+        hid: 'twitter:card',
+        property: 'twitter:card',
+        content: 'summary_large_image'
       }
     ]
   },

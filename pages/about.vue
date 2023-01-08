@@ -16,6 +16,57 @@ export default {
 
   mixins: [smoothScroll],
 
+  head: {
+    title: 'Austin Caron - About Me',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: `Learn more about me (Austin Caron) as a person. As much as I love web development, I have many other passions and interests!`
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'Austin Caron - About Me'
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: `Learn more about me (Austin Caron) as a person. As much as I love web development, I have many other passions and interests!`
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: 'https://dl.dropboxusercontent.com/s/bjqdtto0bo14jqf/og_image.png?dl=0'
+      },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: 'https://austincaron.com'
+      },
+      {
+        hid: 'twitter:title',
+        property: 'twitter:title',
+        content: 'Austin Caron - About Me'
+      },
+      {
+        hid: 'twitter:description',
+        property: 'twitter:description',
+        content: `Learn more about me (Austin Caron) as a person. As much as I love web development, I have many other passions and interests!`
+      },
+      {
+        hid: 'twitter:image',
+        property: 'twitter:image',
+        content: 'https://dl.dropboxusercontent.com/s/bjqdtto0bo14jqf/og_image.png?dl=0'
+      },
+      {
+        hid: 'twitter:card',
+        property: 'twitter:card',
+        content: 'summary_large_image'
+      }
+    ]
+  },
+
   data() {
     return {
       title: 'A Bit About Me',
