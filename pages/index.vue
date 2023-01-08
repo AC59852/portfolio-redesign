@@ -3,7 +3,7 @@
     <section class="hero home__hero">
       <h1 class="title title--home">
         <span class="title--home--name">Austin Caron</span>
-        <span class="title--home--role">Front-End</span>
+        <span class="title--home--role">Creative</span>
         <span class="title--home--role title--home--dev">
           Developer
         </span>
@@ -63,7 +63,7 @@ export default {
   name: 'Home',
 
   head: {
-    title: 'Austin Caron - Home',
+    title: 'Austin Caron - Creative Developer',
     meta: [
       {
         hid: 'description',

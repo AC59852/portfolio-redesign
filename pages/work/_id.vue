@@ -72,6 +72,11 @@ export default {
           hid: 'twitter:image',
           property: 'twitter:image',
           content: this.work.data.big_image.url
+        },
+        {
+          hid: 'twitter:card',
+          property: 'twitter:card',
+          content: 'summary_large_image'
         }
       ]
     }
