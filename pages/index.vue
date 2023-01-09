@@ -36,7 +36,7 @@
         </a>
       </div>
       <div class="home__images home__images--bot">
-        <a href="/" target="_blank" class="image-container home__project home__project--right">
+        <a href="http://dodds-family-smithing.vercel.app/" target="_blank" class="image-container home__project home__project--right">
           <div class="home__info">
             <h2 class="home__project--heading">Dodds Family Smithy</h2>
             <span class="home__plus">+</span>
