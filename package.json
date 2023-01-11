@@ -4,14 +4,15 @@
   "private": true,
   "scripts": {
     "dev": "SET NODE_OPTIONS=--openssl-legacy-provider && nuxt",
-    "build": "nuxt build",
+    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate",
+    "generate": "SET NODE_OPTIONS=--openssl-legacy-provider && nuxt generate",
     "slicemachine": "start-slicemachine"
   },
   "dependencies": {
     "@nuxtjs/prismic": "^1.4.2",
     "@nuxtjs/pwa": "^3.3.5",
+    "@nuxtjs/robots": "^3.0.0",
     "@prismicio/slice-simulator-vue": "^0.2.1",
     "core-js": "^3.19.3",
     "gsap": "^3.11.3",
