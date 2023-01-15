@@ -9,9 +9,16 @@ export default {
     smoothScroll () {
       var fixedElem = document.getElementById('nav');
 
+      let dampingRatio = 0.08;
+
+      // detect if browser is firefox
+      if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+        dampingRatio = 0.06;
+      }
+
       var bodyScrollBar = Scrollbar.init(
         document.getElementById('__nuxt'),
-        { damping: 0.05, delegateTo: document, alwaysShowTracks: true, renderByPixels: true, continuousScrolling: true }
+        { damping: dampingRatio, delegateTo: document, alwaysShowTracks: true, renderByPixels: true, continuousScrolling: true }
       );
 
       // set the scrollbar to the top
