@@ -150,7 +150,10 @@
   .title {
     font-size: 110px;
 
-    &--growth { width: 500px; }
+    &--growth { 
+      width: 500px;
+      margin-bottom: 22px;
+    }
 
     &--featured { width: 500px; }
 
@@ -208,6 +211,17 @@
     &__arrow { display: block; }
 
     &__growth { margin-top: 100px; }
+
+    &__outcome { font-size: 30px; }
+
+    &__growthText {
+      width: 92%;
+
+      p {
+        font-size: 22px;
+        line-height: 160%;
+      }
+    }
 
     &__card { max-width: 435px; }
 
@@ -645,10 +659,14 @@
     &__cards {
       flex-direction: row;
       flex-wrap: wrap;
-      gap: 55px 32px;
+      justify-content: center;
+      gap: 65px;
     }
 
-    &__card { width: 46%; }
+    &__card { 
+      width: 46%;
+      margin: 0; 
+    }
   }
 }
 
@@ -743,7 +761,7 @@
     &__outcomes {
       display: flex;
       flex-wrap: wrap;
-      gap: 15px 10px;
+      gap: 18px 10px;
       margin: 35px 0;
     }
 
@@ -797,8 +815,13 @@
     &__images {
       flex-direction: row;
 
+      &--top {
+        a:first-child {
+          width: 55%;
+        }
+      }
+
       a:first-child {
-        width: 55%;
         margin-top: 0;
       }
 
@@ -845,8 +868,8 @@
       }
 
       &--right:nth-child(1) {
-        width: 39%;
-        margin-top: 200px;
+        width: 41%;
+        margin-top: 270px !important;
       }
 
       &--left {
@@ -882,9 +905,9 @@
     }
 
     &__btn {
-      width: 180px;
+      width: 160px;
       padding: 19px;
-      font-size: 18px;
+      font-size: 19px;
     }
   }
 

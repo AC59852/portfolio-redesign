@@ -12,14 +12,14 @@
           <li class="footer__role">Freelance</li>
         </ul>
         <ul class="footer__socials">
-          <li class="footer__social"><a href="" target="_blank">LinkedIn</a></li>
-          <li class="footer__social"><a href="" target="_blank">GitHub</a></li>
-          <li class="footer__social"><a href="" target="_blank">Instagram</a></li>
+          <li class="footer__social"><a href="https://linkedin.com/in/austincaron" target="_blank">LinkedIn</a></li>
+          <li class="footer__social"><a href="https://github.com/AC59852" target="_blank">GitHub</a></li>
+          <li class="footer__social"><a href="https://twitter.com/austincaron_" target="_blank">Twitter</a></li>
         </ul>
       </div>
       <div class="footer__buttons">
         <NuxtLink to="/contact" class="footer__button footer__button--contact">Contact</NuxtLink>
-        <a href="" target="_blank" class="footer__button footer__button--resume">Resume</a>
+        <a href="https://drive.google.com/file/d/16IpJbqjKL0WKsTW4nbVaoDQab_mDQDCM/view?usp=sharing" target="_blank" class="footer__button footer__button--resume">Resume</a>
       </div>
     </section>
     <section class="footer__content">

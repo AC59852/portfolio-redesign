@@ -21,6 +21,7 @@
     filter: brightness(0);
     margin: auto auto 55px;
     transform: rotate(90deg);
+    animation: bounce 3s cubic-bezier(0.85, 0, 0.15, 1) infinite;
   }
 
   &__services, &__about {
