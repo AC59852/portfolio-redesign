@@ -39,7 +39,7 @@
           <p class="bio__para">I'm a Chatham web designer creating sunning, user-friendly websites. With 5 years of experience, I provide clients with incredible products, and love every minute of it.</p>
           <div class="bio__links">
             <nuxt-link to="/about" class="bio__btn bio__btn--dark">Learn More</nuxt-link>
-            <nuxt-link to="/services" class="bio__btn bio__btn--light">My Services</nuxt-link>
+            <nuxt-link to="/contact" class="bio__btn bio__btn--light">Contact Me</nuxt-link>
           </div>
         </div>
       </div>
@@ -104,7 +104,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: `I'm Austin Caron! I'm a freelance front-end developer who loves to create beautiful, responsive websites. I have in-depth knowledge of plenty of web technologies, and can't want to work with you!`
+        content: `I'm Austin Caron. I'm a Chatham web designer creating sunning, user-friendly websites. With 5 years of experience, I provide clients from Windsor to Toronto with incredible products, and love every minute of it.`
       },
       {
         hid: 'og:title',
@@ -114,7 +114,7 @@ export default {
       {
         hid: 'og:description',
         property: 'og:description',
-        content: `I'm Austin Caron! I'm a freelance front-end developer who loves to create beautiful, responsive websites. I have in-depth knowledge of plenty of web technologies, and can't want to work with you!`
+        content: `I'm Austin Caron. I'm a Chatham web designer creating sunning, user-friendly websites. With 5 years of experience, I provide clients from Windsor to Toronto with incredible products, and love every minute of it.`
       },
       {
         hid: 'og:image',
@@ -134,7 +134,7 @@ export default {
       {
         hid: 'twitter:description',
         property: 'twitter:description',
-        content: `I'm Austin Caron! I'm a freelance front-end developer who loves to create beautiful, responsive websites. I have in-depth knowledge of plenty of web technologies, and can't want to work with you!`
+        content: `I'm Austin Caron. I'm a Chatham web designer creating sunning, user-friendly websites. With 5 years of experience, I provide clients from Windsor to Toronto with incredible products, and love every minute of it.`
       },
       {
         hid: 'twitter:image',

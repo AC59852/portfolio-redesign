@@ -732,7 +732,8 @@
     }
 
     &--project {
-      width: 59%;
+      width: 66%;
+      line-height: 160%;
       font-size: 23px;
       max-width: 819px;
     }
@@ -960,6 +961,12 @@
 
     .title {
       width: 829px;
+      margin-bottom: 40px;
+    }
+
+    .subtitle {
+      width: 633px;
+      line-height: 166%;
     }
 
     &__sectionName {
