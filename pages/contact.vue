@@ -2,7 +2,7 @@
   <section class="contact">
     <HeroComponent heroTitle="Connect With Me" heroPara="Need a new site? Online presence? Just want to talk? Choose any one of the links and you’ll get a response, I promise." />
     <section class="contact__links">
-      <div><a href="mailto:hello@austincaron.com" class="contact__link contact__link--email">hello@austincaron<span class="title--period">.</span>com</a></div>
+      <div><a href="mailto:austin.caron1@gmail.com" class="contact__link contact__link--email">hello@austincaron<span class="title--period">.</span>com</a></div>
       <div><a href="https://linkedin.com/in/austincaron" class="contact__link contact__link--linkedin" target="_blank">linkedin<span class="title--period">.</span>com/austincaron</a></div>
       <div><a href="https://twitter.com/austincaron_" class="contact__link contact__link--twitter" target="_blank">twitter<span class="title--period">.</span>com/austincaron_</a></div>
     </section>

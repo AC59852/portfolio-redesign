@@ -12,7 +12,7 @@
         <!-- <img src="~/assets/chevron-right-solid.svg" alt="Arrow Pointing Right"> -->
       </li>
     </ul>
-    <a class="card__link" :href="`mailto:hello@austincaron.com?subject=Inquiring%20About%20the%20${card.title}%20Package`">Get Started</a>
+    <a class="card__link" :href="`mailto:austin.caron1@gmail.com?subject=Inquiring%20About%20the%20${card.title}%20Package`">Get Started</a>
   </div>
 </template>
 
