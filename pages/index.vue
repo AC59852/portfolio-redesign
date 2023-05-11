@@ -74,7 +74,7 @@
       <div class="home__images home__images--bot">
         <a href="https://www.youtube.com/@AustinCaron" target="_blank" class="image-container home__project home__project--right">
           <div class="home__info">
-            <h2 class="home__project--heading">YouTube Channcel</h2>
+            <h2 class="home__project--heading">YouTube Channel</h2>
             <span class="home__plus">+</span>
           </div>
           <img class="image" src="https://images.prismic.io/new-portfolio-ac/227336a0-d671-4a94-9e19-5894dd66ded9_yt_thumbnail.png?auto=compress,format" alt="Preview Image for My YouTube Channel: @AustinCaron">
