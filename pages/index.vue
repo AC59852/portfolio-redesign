@@ -52,7 +52,7 @@
             <h2 class="home__project--heading">Patrick Bradley</h2>
             <span class="home__plus">+</span>
           </div>
-          <img class="image" src="https://images.prismic.io/new-portfolio-ac/8080be52-2153-4e70-9217-f4a13cf5e259_patrick_preview2.jpg?auto=compress,format" alt="Preview Image of Patrick Bradley's website">
+          <img class="image" src="https://images.prismic.io/new-portfolio-ac/8080be52-2153-4e70-9217-f4a13cf5e259_patrick_preview2.jpg?auto=compress,format" alt="Preview Image of Patrick Bradley's Portfolio website">
         </a>
         <a href="https://ixd-weal.web.app/" target="_blank" class="image-container home__project home__project--right">
           <div class="home__info">
@@ -72,19 +72,19 @@
         </a>
       </div>
       <div class="home__images home__images--bot">
-        <a href="http://dodds-family-smithing.vercel.app/" target="_blank" class="image-container home__project home__project--right">
+        <a href="https://www.youtube.com/@AustinCaron" target="_blank" class="image-container home__project home__project--right">
           <div class="home__info">
-            <h2 class="home__project--heading">Dodds Family Smithy</h2>
+            <h2 class="home__project--heading">YouTube Channel</h2>
             <span class="home__plus">+</span>
           </div>
-          <img class="image" src="https://images.prismic.io/new-portfolio-ac/03ded026-b627-46e9-a873-46f715ea1a78_dodds_preview.jpg?auto=compress,format" alt="">
+          <img class="image" src="https://images.prismic.io/new-portfolio-ac/9664187d-2610-4219-89d4-fa35a31d3433_yt_preview.webp?auto=compress,format" alt="Preview Image for My YouTube Channel: @AustinCaron">
         </a>
         <a href="https://ac59852.github.io/toksan-anime/" target="_blank" class="image-container home__project home__project--leftSmall">
           <div class="home__info">
             <h2 class="home__project--heading">Toksan Anime</h2>
             <span class="home__plus">+</span>
           </div>
-          <img class="image" src="https://images.prismic.io/new-portfolio-ac/8b7efcc6-e04e-4508-9d98-17357dec206e_toksan_preview.jpg?auto=compress,format" alt="">
+          <img class="image" src="https://images.prismic.io/new-portfolio-ac/8b7efcc6-e04e-4508-9d98-17357dec206e_toksan_preview.jpg?auto=compress,format" alt="Preview Image for the Toksan RPG Browser Game">
         </a>
       </div>
     </section>
