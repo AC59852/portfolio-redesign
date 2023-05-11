@@ -72,13 +72,6 @@
         </a>
       </div>
       <div class="home__images home__images--bot">
-        <a href="http://dodds-family-smithing.vercel.app/" target="_blank" class="image-container home__project home__project--right">
-          <div class="home__info">
-            <h2 class="home__project--heading">Dodds Family Smithy</h2>
-            <span class="home__plus">+</span>
-          </div>
-          <img class="image" src="https://images.prismic.io/new-portfolio-ac/03ded026-b627-46e9-a873-46f715ea1a78_dodds_preview.jpg?auto=compress,format" alt="">
-        </a>
         <a href="https://ac59852.github.io/toksan-anime/" target="_blank" class="image-container home__project home__project--leftSmall">
           <div class="home__info">
             <h2 class="home__project--heading">Toksan Anime</h2>
