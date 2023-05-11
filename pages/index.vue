@@ -77,7 +77,7 @@
             <h2 class="home__project--heading">YouTube Channel</h2>
             <span class="home__plus">+</span>
           </div>
-          <img class="image" src="https://images.prismic.io/new-portfolio-ac/227336a0-d671-4a94-9e19-5894dd66ded9_yt_thumbnail.png?auto=compress,format" alt="Preview Image for My YouTube Channel: @AustinCaron">
+          <img class="image" src="https://images.prismic.io/new-portfolio-ac/9664187d-2610-4219-89d4-fa35a31d3433_yt_preview.webp?auto=compress,format" alt="Preview Image for My YouTube Channel: @AustinCaron">
         </a>
         <a href="https://ac59852.github.io/toksan-anime/" target="_blank" class="image-container home__project home__project--leftSmall">
           <div class="home__info">
