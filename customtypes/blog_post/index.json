@@ -1,0 +1,73 @@
+{
+  "id": "blog_post",
+  "label": "Blog Post",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "Post ID",
+          "placeholder": ""
+        }
+      },
+      "primary_image": {
+        "type": "Image",
+        "config": {
+          "label": "Primary Image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "post_featured": {
+        "type": "Boolean",
+        "config": {
+          "label": "Is This is a Featured Post?",
+          "placeholder_false": "false",
+          "placeholder_true": "true",
+          "default_value": false
+        }
+      },
+      "post_title": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Post Title",
+          "placeholder": "Blog Post Title",
+          "allowTargetBlank": true,
+          "single": "heading2,heading1"
+        }
+      },
+      "post_preview_text": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Post Preview Text",
+          "placeholder": "Blog Post Preview Text",
+          "allowTargetBlank": true,
+          "single": "paragraph,em"
+        }
+      },
+      "post_date": {
+        "type": "Date",
+        "config": {
+          "label": "Post Date",
+          "placeholder": ""
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "blog_single_image": {
+              "type": "SharedSlice"
+            },
+            "blog_text_content": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  }
+}

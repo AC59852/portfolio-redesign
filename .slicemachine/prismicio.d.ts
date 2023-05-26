@@ -6,6 +6,91 @@ import type * as prismic from "@prismicio/client";
 type Simplify<T> = {
     [KeyType in keyof T]: T[KeyType];
 };
+/** Content for Blog Post documents */
+interface BlogPostDocumentData {
+    /**
+     * Primary Image field in *Blog Post*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: blog_post.primary_image
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    primary_image: prismicT.ImageField<never>;
+    /**
+     * Is This is a Featured Post? field in *Blog Post*
+     *
+     * - **Field Type**: Boolean
+     * - **Placeholder**: *None*
+     * - **Default Value**: false
+     * - **API ID Path**: blog_post.post_featured
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/boolean
+     *
+     */
+    post_featured: prismicT.BooleanField;
+    /**
+     * Post Title field in *Blog Post*
+     *
+     * - **Field Type**: Title
+     * - **Placeholder**: Blog Post Title
+     * - **API ID Path**: blog_post.post_title
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    post_title: prismicT.TitleField;
+    /**
+     * Post Preview Text field in *Blog Post*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: Blog Post Preview Text
+     * - **API ID Path**: blog_post.post_preview_text
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    post_preview_text: prismicT.RichTextField;
+    /**
+     * Post Date field in *Blog Post*
+     *
+     * - **Field Type**: Date
+     * - **Placeholder**: *None*
+     * - **API ID Path**: blog_post.post_date
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/date
+     *
+     */
+    post_date: prismicT.DateField;
+    /**
+     * Slice Zone field in *Blog Post*
+     *
+     * - **Field Type**: Slice Zone
+     * - **Placeholder**: *None*
+     * - **API ID Path**: blog_post.slices[]
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/slices
+     *
+     */
+    slices: prismicT.SliceZone<BlogPostDocumentDataSlicesSlice>;
+}
+/**
+ * Slice for *Blog Post → Slice Zone*
+ *
+ */
+type BlogPostDocumentDataSlicesSlice = BlogSingleImageSlice | BlogTextContentSlice;
+/**
+ * Blog Post document from Prismic
+ *
+ * - **API ID**: `blog_post`
+ * - **Repeatable**: `true`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type BlogPostDocument<Lang extends string = string> = prismicT.PrismicDocumentWithUID<Simplify<BlogPostDocumentData>, "blog_post", Lang>;
 /** Content for Work Page documents */
 interface WorkPageDocumentData {
     /**
@@ -97,7 +182,95 @@ type WorkDocumentDataSlicesSlice = TechSliceSlice | TextSliceSlice | TriImageSli
  * @typeParam Lang - Language API ID of the document.
  */
 export type WorkDocument<Lang extends string = string> = prismicT.PrismicDocumentWithUID<Simplify<WorkDocumentData>, "work", Lang>;
-export type AllDocumentTypes = WorkPageDocument | WorkDocument;
+export type AllDocumentTypes = BlogPostDocument | WorkPageDocument | WorkDocument;
+/**
+ * Primary content in BlogSingleImage → Primary
+ *
+ */
+interface BlogSingleImageSliceDefaultPrimary {
+    /**
+     * Post Image field in *BlogSingleImage → Primary*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: blog_single_image.primary.post_image
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    post_image: prismicT.ImageField<never>;
+}
+/**
+ * Default variation for BlogSingleImage Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `BlogSingleImage`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type BlogSingleImageSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<BlogSingleImageSliceDefaultPrimary>, never>;
+/**
+ * Slice variation for *BlogSingleImage*
+ *
+ */
+type BlogSingleImageSliceVariation = BlogSingleImageSliceDefault;
+/**
+ * BlogSingleImage Shared Slice
+ *
+ * - **API ID**: `blog_single_image`
+ * - **Description**: `BlogSingleImage`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type BlogSingleImageSlice = prismicT.SharedSlice<"blog_single_image", BlogSingleImageSliceVariation>;
+/**
+ * Primary content in BlogTextContent → Primary
+ *
+ */
+interface BlogTextContentSliceDefaultPrimary {
+    /**
+     * Post Content Title field in *BlogTextContent → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: Post Content Title
+     * - **API ID Path**: blog_text_content.primary.post_content_title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    post_content_title: prismicT.RichTextField;
+    /**
+     * Post Content Body field in *BlogTextContent → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: Post Content Body
+     * - **API ID Path**: blog_text_content.primary.post_content_body
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    post_content_body: prismicT.RichTextField;
+}
+/**
+ * Default variation for BlogTextContent Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `BlogTextContent`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type BlogTextContentSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<BlogTextContentSliceDefaultPrimary>, never>;
+/**
+ * Slice variation for *BlogTextContent*
+ *
+ */
+type BlogTextContentSliceVariation = BlogTextContentSliceDefault;
+/**
+ * BlogTextContent Shared Slice
+ *
+ * - **API ID**: `blog_text_content`
+ * - **Description**: `BlogTextContent`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type BlogTextContentSlice = prismicT.SharedSlice<"blog_text_content", BlogTextContentSliceVariation>;
 /**
  * Primary content in DualImageSlice → Primary
  *
@@ -418,6 +591,6 @@ declare module "@prismicio/client" {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { WorkPageDocumentData, WorkPageDocumentDataSlicesSlice, WorkPageDocument, WorkDocumentData, WorkDocumentDataSlicesSlice, WorkDocument, AllDocumentTypes, DualImageSliceSliceDefaultPrimary, DualImageSliceSliceDefault, DualImageSliceSliceVariation, DualImageSliceSlice, TechSliceSliceDefaultPrimary, TechSliceSliceDefault, TechSliceSliceVariation, TechSliceSlice, TextSliceSliceDefaultPrimary, TextSliceSliceDefault, TextSliceSliceVariation, TextSliceSlice, TriImageSliceSliceDefaultPrimary, TriImageSliceSliceDefault, TriImageSliceSliceVariation, TriImageSliceSlice, WorkProjectSliceSliceDefaultPrimary, WorkProjectSliceSliceDefault, WorkProjectSliceSliceVariation, WorkProjectSliceSlice };
+        export type { BlogPostDocumentData, BlogPostDocumentDataSlicesSlice, BlogPostDocument, WorkPageDocumentData, WorkPageDocumentDataSlicesSlice, WorkPageDocument, WorkDocumentData, WorkDocumentDataSlicesSlice, WorkDocument, AllDocumentTypes, BlogSingleImageSliceDefaultPrimary, BlogSingleImageSliceDefault, BlogSingleImageSliceVariation, BlogSingleImageSlice, BlogTextContentSliceDefaultPrimary, BlogTextContentSliceDefault, BlogTextContentSliceVariation, BlogTextContentSlice, DualImageSliceSliceDefaultPrimary, DualImageSliceSliceDefault, DualImageSliceSliceVariation, DualImageSliceSlice, TechSliceSliceDefaultPrimary, TechSliceSliceDefault, TechSliceSliceVariation, TechSliceSlice, TextSliceSliceDefaultPrimary, TextSliceSliceDefault, TextSliceSliceVariation, TextSliceSlice, TriImageSliceSliceDefaultPrimary, TriImageSliceSliceDefault, TriImageSliceSliceVariation, TriImageSliceSlice, WorkProjectSliceSliceDefaultPrimary, WorkProjectSliceSliceDefault, WorkProjectSliceSliceVariation, WorkProjectSliceSlice };
     }
 }

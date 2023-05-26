@@ -1,0 +1,40 @@
+.post {
+  width: 100%;
+  max-width: 1400px;
+  margin: 100px auto 0;
+
+  &__top {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  &__image {
+    width: 100%;
+    height: min(760px, 50vw);
+    object-fit: cover;
+    border-radius: 17px;
+    margin: 62px 0;
+  }
+  
+  &__title {
+    font-size: 92px;
+    font-weight: bold;
+    line-height: 113%;
+    width: 720px;
+    color: $primary-black;
+    margin-top: 25px;
+  }
+
+  &__previewText {
+    font-size: 1rem;
+    color: $primary-black;
+    line-height: 164%;
+    width: 90%;
+    font-style: italic;
+    margin-top: 18px;
+  }
+
+  &:last-child {
+    margin-bottom: 82px;
+  }
+}
