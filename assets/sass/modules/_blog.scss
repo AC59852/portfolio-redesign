@@ -1,16 +1,30 @@
 .post {
   width: 100%;
-  max-width: 1400px;
-  margin: 100px auto 0;
+  max-width: 1500px;
+  margin: 140px auto 0;
 
   &__top {
     width: 80%;
     margin: 0 auto;
   }
 
+  &__back {
+    color: $primary-black;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: solid 3px transparent;
+    transition: border-bottom 0.3s;
+
+    &:hover {
+      cursor: pointer;
+      border-bottom: solid 3px $primary-black;
+    }
+  }
+
   &__image {
     width: 100%;
-    height: min(760px, 50vw);
+    height: min(820px, 50vw);
     object-fit: cover;
     border-radius: 17px;
     margin: 62px 0;

@@ -16,7 +16,7 @@ export default {
 </script>
 <style scoped>
 .post__body {
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
 }
  .post__heading {
@@ -26,14 +26,14 @@ export default {
  }
 
  .post__textContent {
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   display: flex;
   flex-direction: column;
   gap: 20px;
  }
 
  .post__textContent :deep(p) {
-  line-height: 150%;
+  line-height: 155%;
  }
 
  .post__textContent :deep(h2), .post__textContent :deep(h3) {
