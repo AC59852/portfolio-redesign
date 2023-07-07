@@ -24,6 +24,16 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+  .blogCard {
+    width: 350px;
+  }
 
+  .blogCard img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 17px;
+  }
 </style>

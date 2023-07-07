@@ -8,10 +8,9 @@
           Developer
         </span>
       </h1>
-      <p class="home__subtitle">Elevating local business with purpose.</p>
       <img class="home__arrow" src="~/assets/chevron-right-solid.svg" alt="Arrow Pointing downwards indicating to scroll down to view more">
     </section>
-    <section class="home__growth">
+    <!-- <section class="home__growth">
       <h2 class="title title--growth">Helping You Grow<span class="title--period">.</span></h2>
       <div class="home__outcomes" v-if="mobile || tablet" @load="cycleOutcome()">
         <h3 class="home__outcome">{{ currentOutcome.emoji }} {{ currentOutcome.title }}</h3>
@@ -23,8 +22,8 @@
         <p>In today's age, having an online presence is crucial for any business looking to grow and reach new customers. A website can help establish credibility, increase visibility, and provide a platform for customers to learn more about your products or services. Having a website can open up new opportunities for your business and help you stay ahead of the competition.</p>
         <p>I'm here to provide all of that and more. Using my skills and experience as both a designer and developer, I provide beautifully designed, engaging websites that cater to your customers.</p>
       </div>
-    </section>
-    <section class="home__services">
+    </section> -->
+    <!-- <section class="home__services">
       <h2 class="title title--services">My Services<span class="title--period">.</span></h2>
       <div class="home__cards">
         <CardComponent v-for="card in cards" :key="card.id" :card="card" />
@@ -43,9 +42,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <section class="home__projects">
-      <h2 class="title title--featured">Featured Work<span class="title--period">.</span></h2>
+      <h2 class="title title--featured" hidden>Featured Work<span class="title--period">.</span></h2>
       <div class="home__images home__images--top">
         <a href="https://patrickbradley.me/" target="_blank" class="image-container home__project home__project--left">
           <div class="home__info">
@@ -155,65 +154,65 @@ export default {
     return {
       mobile: false,
       tablet: false,
-      outcomes: [
-        {id: 0, emoji: '🥇', title: 'Your Goals First'},
-        {id: 1, emoji: '🤝', title: 'User-Centered Design'},
-        {id: 2, emoji: '🧘', title: 'Ease of Use'},
-        {id: 3, emoji: '🎨', title: 'Branding'},
-        {id: 4, emoji: '🔍', title: 'Search Engine Optimization'},
-        {id: 5, emoji: '📈', title: 'Conversions'},
-        {id: 6, emoji: '📱', title: 'Mobile-Friendly'},
-        {id: 7, emoji: '💪', title: 'Success Driven'},
-        {id: 8, emoji: '🖥️', title: 'Responsive Design'},
-        {id: 9, emoji: '🔥', title: 'Incredible Service'},
-      ],
-      currentOutcome: {id: 0, emoji: '🥇', title: 'Your Goals First'},
-      cards: [
-        {
-          id: 0, 
-          title: 'Starter', 
-          price: 500, 
-          subtitle: 'Enhance your online presence quickly', 
-          points: [
-            {id: 0, title: 'High Quality Template'},
-            {id: 1, title: 'Blazing Fast Performance'},
-            {id: 2, title: 'Responsive Design'},
-            {id: 3, title: 'Working Contact Solutions'},
-            {id: 4, title: 'Analytics Integration'},
-          ]
-        },
-        {
-          id: 1, 
-          title: 'Pro', 
-          price: 3100, 
-          subtitle: 'Phenomenal service free of charge', 
-          points: [
-            {id: 0, title: 'Personalized Design'},
-            {id: 1, title: '10 Pages Plus Revisions'},
-            {id: 2, title: 'Dynamic Content Options'},
-            {id: 3, title: 'Custom SEO'},
-            {id: 4, title: 'Everything From Standard'},
-          ]
-        },
-        {
-          id: 2, 
-          title: 'Custom', 
-          price: 'TBD', 
-          subtitle: 'Mix and match for your needs', 
-          points: [
-            {id: 0, title: 'Content Management Tools'},
-            {id: 1, title: 'More Pages/Revisions'},
-            {id: 2, title: 'Hosting and Domains'},
-            {id: 3, title: 'Monthly Maintenance'},
-            {id: 4, title: 'Social Media Integration'},
-          ]
-        },
-      ]
+      // outcomes: [
+      //   {id: 0, emoji: '🥇', title: 'Your Goals First'},
+      //   {id: 1, emoji: '🤝', title: 'User-Centered Design'},
+      //   {id: 2, emoji: '🧘', title: 'Ease of Use'},
+      //   {id: 3, emoji: '🎨', title: 'Branding'},
+      //   {id: 4, emoji: '🔍', title: 'Search Engine Optimization'},
+      //   {id: 5, emoji: '📈', title: 'Conversions'},
+      //   {id: 6, emoji: '📱', title: 'Mobile-Friendly'},
+      //   {id: 7, emoji: '💪', title: 'Success Driven'},
+      //   {id: 8, emoji: '🖥️', title: 'Responsive Design'},
+      //   {id: 9, emoji: '🔥', title: 'Incredible Service'},
+      // ],
+      // currentOutcome: {id: 0, emoji: '🥇', title: 'Your Goals First'},
+      // cards: [
+      //   {
+      //     id: 0, 
+      //     title: 'Starter', 
+      //     price: 500, 
+      //     subtitle: 'Enhance your online presence quickly', 
+      //     points: [
+      //       {id: 0, title: 'High Quality Template'},
+      //       {id: 1, title: 'Blazing Fast Performance'},
+      //       {id: 2, title: 'Responsive Design'},
+      //       {id: 3, title: 'Working Contact Solutions'},
+      //       {id: 4, title: 'Analytics Integration'},
+      //     ]
+      //   },
+      //   {
+      //     id: 1, 
+      //     title: 'Pro', 
+      //     price: 3100, 
+      //     subtitle: 'Phenomenal service free of charge', 
+      //     points: [
+      //       {id: 0, title: 'Personalized Design'},
+      //       {id: 1, title: '10 Pages Plus Revisions'},
+      //       {id: 2, title: 'Dynamic Content Options'},
+      //       {id: 3, title: 'Custom SEO'},
+      //       {id: 4, title: 'Everything From Standard'},
+      //     ]
+      //   },
+      //   {
+      //     id: 2, 
+      //     title: 'Custom', 
+      //     price: 'TBD', 
+      //     subtitle: 'Mix and match for your needs', 
+      //     points: [
+      //       {id: 0, title: 'Content Management Tools'},
+      //       {id: 1, title: 'More Pages/Revisions'},
+      //       {id: 2, title: 'Hosting and Domains'},
+      //       {id: 3, title: 'Monthly Maintenance'},
+      //       {id: 4, title: 'Social Media Integration'},
+      //     ]
+      //   },
+      // ]
     }
   },
 
   mounted () {
-    var intervalId;
+    // var intervalId;
 
     if (window.innerWidth < 768) {
       document.querySelector("#__nuxt").style.height = "100%"
@@ -225,32 +224,33 @@ export default {
     if(window.innerWidth < 1365) {
       this.tablet = true
       this.mobile = false
+    }
 
       // set interval for outcomes
-      var intervalId = setInterval(() => {
-        // fade out
-        document.querySelector('.home__outcome').classList.add('home__outcome--fade')
-        // fade in
-        setTimeout(() => {
-          // change outcome
-          let random = Math.floor(Math.random() * this.outcomes.length)
+    //   var intervalId = setInterval(() => {
+    //     // fade out
+    //     document.querySelector('.home__outcome').classList.add('home__outcome--fade')
+    //     // fade in
+    //     setTimeout(() => {
+    //       // change outcome
+    //       let random = Math.floor(Math.random() * this.outcomes.length)
 
-          if(random === this.currentOutcome.id) {
-            random = Math.floor(Math.random() * this.outcomes.length)
-          }
+    //       if(random === this.currentOutcome.id) {
+    //         random = Math.floor(Math.random() * this.outcomes.length)
+    //       }
 
-          this.currentOutcome = this.outcomes[random]
+    //       this.currentOutcome = this.outcomes[random]
         
-          document.querySelector('.home__outcome').classList.remove('home__outcome--fade')
-        }, 1500)
+    //       document.querySelector('.home__outcome').classList.remove('home__outcome--fade')
+    //     }, 1500)
 
-      }, 5000)
-    } else {
-      let lastChild = document.querySelector(".home__outcomes").lastChild;
+    //   }, 5000)
+    // } else {
+    //   let lastChild = document.querySelector(".home__outcomes").lastChild;
       
-      // remove the pipe from the last child
-      lastChild.innerHTML = lastChild.innerHTML.replace('|', '')
-    }
+    //   // remove the pipe from the last child
+    //   lastChild.innerHTML = lastChild.innerHTML.replace('|', '')
+    // }
 
     window.addEventListener('resize', () => {
       if (window.innerWidth < 768) {
@@ -261,13 +261,13 @@ export default {
         this.mobile = false
         this.tablet = false
 
-        let lastChild = document.querySelector(".home__outcomes").lastChild;
+        // let lastChild = document.querySelector(".home__outcomes").lastChild;
 
-        // remove the pipe from the last child
-        lastChild.innerHTML = lastChild.innerHTML.replace('|', '')
+        // // remove the pipe from the last child
+        // lastChild.innerHTML = lastChild.innerHTML.replace('|', '')
 
-        // stop the interval
-        clearInterval(intervalId)
+        // // stop the interval
+        // clearInterval(intervalId)
       }
     })
     
