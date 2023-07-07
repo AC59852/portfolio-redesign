@@ -1,6 +1,139 @@
 {
   "slices": {
     "components": {
+      "blog_single_image": {
+        "library": "slices",
+        "id": "blog_single_image",
+        "name": "BlogSingleImage",
+        "description": "BlogSingleImage",
+        "model": {
+          "id": "blog_single_image",
+          "type": "SharedSlice",
+          "name": "BlogSingleImage",
+          "description": "BlogSingleImage",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "BlogSingleImage",
+              "primary": {
+                "post_image": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Post Image",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "post_image": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68"
+              }
+            },
+            "slice_type": "blog_single_image"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "vue"
+        },
+        "screenshotPaths": {}
+      },
+      "blog_text_content": {
+        "library": "slices",
+        "id": "blog_text_content",
+        "name": "BlogTextContent",
+        "description": "BlogTextContent",
+        "model": {
+          "id": "blog_text_content",
+          "type": "SharedSlice",
+          "name": "BlogTextContent",
+          "description": "BlogTextContent",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "BlogTextContent",
+              "primary": {
+                "post_content_title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Post Content Title",
+                    "placeholder": "Post Content Title",
+                    "allowTargetBlank": true,
+                    "single": "heading2,heading3,heading4,heading5,heading6,strong,hyperlink,embed"
+                  }
+                },
+                "post_content_body": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Post Content Body",
+                    "placeholder": "Post Content Body",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,preformatted,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "post_content_title": [
+                {
+                  "type": "heading2",
+                  "text": "Spring",
+                  "spans": []
+                }
+              ],
+              "post_content_body": [
+                {
+                  "type": "paragraph",
+                  "text": "Aliquip excepteur commodo cupidatat adipisicing occaecat in ipsum do. Dolor ut do aliqua ipsum ea id Lorem.",
+                  "spans": []
+                }
+              ]
+            },
+            "slice_type": "blog_text_content"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "vue"
+        },
+        "screenshotPaths": {}
+      },
       "dual_image_slice": {
         "library": "slices",
         "id": "dual_image_slice",

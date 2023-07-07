@@ -1,0 +1,41 @@
+{
+  "id": "mock-doc-id",
+  "url": null,
+  "type": "blog_post",
+  "href": null,
+  "tags": [],
+  "first_publication_date": "1970-01-01T00:00:01+0000",
+  "last_publication_date": "1970-01-01T00:00:01+0000",
+  "slugs": [],
+  "linked_documents": [],
+  "lang": "en-us",
+  "alternate_languages": [],
+  "data": {
+    "primary_image": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468"
+    },
+    "post_featured": true,
+    "post_title": [
+      {
+        "type": "heading2",
+        "text": "Settlers",
+        "spans": []
+      }
+    ],
+    "post_preview_text": [
+      {
+        "type": "paragraph",
+        "text": "Dolor sunt commodo veniam labore ex dolore. Lorem adipisicing id eu enim reprehenderit ea consectetur dolor nisi exercitation. Ullamco do fugiat aliqua.",
+        "spans": []
+      }
+    ],
+    "post_date": "2015-09-14",
+    "slices": []
+  }
+}

@@ -6,6 +6,7 @@
 @import "./modules/about";
 @import "./modules/project";
 @import "./modules/services";
+@import "./modules/blog";
 @import "./modules/footer";
 @import "./modules/queries";
 
@@ -17,6 +18,12 @@
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+.blog-layout {
+  width: 100% !important;
+  height: auto !important;
+  position: relative !important;
 }
 
 .scroll-content {

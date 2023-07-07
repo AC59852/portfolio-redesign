@@ -1,7 +1,21 @@
 {
   "_cts": {
     "work": {},
-    "work_page": {}
+    "work_page": {},
+    "blog_post": {
+      "post_title": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      },
+      "post_preview_text": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    }
   },
   "slices": {
     "TextSlice": {
@@ -60,6 +74,29 @@
     "DualImageSlice": {
       "default": {
         "primary": {}
+      }
+    },
+    "BlogSingleImage": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "BlogTextContent": {
+      "default": {
+        "primary": {
+          "post_content_title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          },
+          "post_content_body": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
       }
     }
   }

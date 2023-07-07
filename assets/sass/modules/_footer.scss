@@ -73,5 +73,10 @@
     font-size: 14px;
     opacity: 0.75;
     text-align: center;
+
+    &--blog {
+      text-align: right;
+      margin-right: 20px;
+    }
   }
 }
