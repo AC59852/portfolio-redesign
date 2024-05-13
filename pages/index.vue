@@ -62,7 +62,7 @@
         </a>
       </div>
       <div class="home__images home__images--mid">
-        <a href="https://toksan.ca" target="_blank" class="image-container home__project home__project--left">
+        <a href="https://toksan-rpg-playground.vercel.app/" target="_blank" class="image-container home__project home__project--left">
           <div class="home__info">
             <h2 class="home__project--heading">Toksan Game</h2>
             <span class="home__plus">+</span>
