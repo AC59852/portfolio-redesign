@@ -46,12 +46,12 @@
     <section class="home__projects">
       <h2 class="title title--featured" hidden>Featured Work<span class="title--period">.</span></h2>
       <div class="home__images home__images--top">
-        <a href="https://patrickbradley.me/" target="_blank" class="image-container home__project home__project--left">
+        <a href="https://sparklist.ai" target="_blank" class="image-container home__project home__project--left">
           <div class="home__info">
-            <h2 class="home__project--heading">Patrick Bradley</h2>
+            <h2 class="home__project--heading">Sparklist</h2>
             <span class="home__plus">+</span>
           </div>
-          <img class="image" src="https://images.prismic.io/new-portfolio-ac/8080be52-2153-4e70-9217-f4a13cf5e259_patrick_preview2.jpg?auto=compress,format" alt="Preview Image of Patrick Bradley's Portfolio website">
+          <img class="image" src="~/assets/sparklist.png" style="object-fit: contain !important;" alt="Preview Image of Patrick Bradley's Portfolio website">
         </a>
         <a href="https://ixd-weal.web.app/" target="_blank" class="image-container home__project home__project--right">
           <div class="home__info">
