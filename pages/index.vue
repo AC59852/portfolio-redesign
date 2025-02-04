@@ -53,12 +53,12 @@
           </div>
           <img class="image" src="~/assets/sparklist.png" style="object-fit: contain !important;" alt="Preview Image of Patrick Bradley's Portfolio website">
         </a>
-        <a href="https://ixd-weal.web.app/" target="_blank" class="image-container home__project home__project--right">
+        <a href="https://virtual-visions-red.vercel.app/" target="_blank" class="image-container home__project home__project--right">
           <div class="home__info">
-            <h2 class="home__project--heading">Weal Wellness App</h2>
+            <h2 class="home__project--heading">Virtual Visions</h2>
             <span class="home__plus">+</span>
           </div>
-          <img class="image" src="https://images.prismic.io/new-portfolio-ac/2c7addd5-2a39-4624-84a2-94d4a2fb21b8_weal_preview.jpg?auto=compress,format" alt="Preview Image of the Weal - Mental Wellness website">
+          <img class="image" src="https://images.prismic.io/new-portfolio-ac/Z6JxV5bqstJ9-Ocu_vv-big.png?auto=format,compress" alt="Preview Image of the Virtual Visions website">
         </a>
       </div>
       <div class="home__images home__images--mid">
