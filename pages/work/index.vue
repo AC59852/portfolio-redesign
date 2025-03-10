@@ -20,13 +20,13 @@
 </template>
 
 <script>
-import smoothScroll from '~/mixins/smoothScroll'
+//import smoothScroll from '~/mixins/smoothScroll'
 import imageParallax from '~/mixins/imageParallax'
 
 export default {
   name: 'Work',
 
-  mixins: [smoothScroll, imageParallax],
+  mixins: [imageParallax],
 
   async asyncData({$prismic, params, error}) {
     // get the work_page document from prismic and store all the data in the work variable
@@ -108,7 +108,7 @@ export default {
   mounted() {
     console.log(this.$route)
 
-    this.smoothScroll()
+    // this.smoothScroll()
     this.imageParallax()
   },
 

@@ -14,8 +14,6 @@ import smoothScroll from '~/mixins/smoothScroll'
 export default {
   name: 'About',
 
-  mixins: [smoothScroll],
-
   head: {
     title: 'Austin Caron - About Me',
     meta: [
@@ -78,13 +76,11 @@ export default {
     }
   },
 
-  mounted() {
-    if (window.innerWidth < 768) {
-      document.querySelector("#__nuxt").style.height = "100%"
-    }
-
-    this.smoothScroll()
-  },
+  // mounted() {
+  //   if (window.innerWidth < 768) {
+  //     document.querySelector("#__nuxt").style.height = "100%"
+  //   }
+  // },
 
   components: {
     AboutHeroComponent: () => import('~/components/HeroComponent.vue'),
