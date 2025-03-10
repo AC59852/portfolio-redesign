@@ -15,12 +15,12 @@
 </template>
 
 <script>
-import smoothScroll from '~/mixins/smoothScroll'
+//import smoothScroll from '~/mixins/smoothScroll'
 import imageParallax from '~/mixins/imageParallax'
 import { components } from '~/slices'
 
 export default {
-  mixins: [smoothScroll, imageParallax],
+  mixins: [imageParallax],
 
   scrollToTop: true,
 
@@ -109,7 +109,7 @@ export default {
       }
     })
 
-    this.smoothScroll()
+    //this.smoothScroll()
     this.imageParallax()
     this.checkPara()
   },

@@ -91,7 +91,7 @@
 </template>
 
 <script>
-import smoothScroll from '~/mixins/smoothScroll'
+//import smoothScroll from '~/mixins/smoothScroll'
 import imageParallax from '~/mixins/imageParallax'
 
 export default {
@@ -148,7 +148,7 @@ export default {
     ],
   },
 
-  mixins: [smoothScroll, imageParallax],
+  mixins: [imageParallax],
 
   data() {
     return {
@@ -271,7 +271,7 @@ export default {
       }
     })
     
-    this.smoothScroll()
+    //this.smoothScroll()
     this.imageParallax()
   }
 }

@@ -11,11 +11,9 @@
 </template>
 
 <script>
-import smoothScroll from '~/mixins/smoothScroll'
+// import smoothScroll from '~/mixins/smoothScroll'
 export default {
   name: 'Contact',
-
-  mixins: [smoothScroll],
 
   head: {
     title: 'Austin Caron - Contact Me',
@@ -77,9 +75,9 @@ export default {
     }
   },
 
-  mounted() {
-    this.smoothScroll()
-  },
+  // mounted() {
+  //   this.smoothScroll()
+  // },
 
   components: {
     HeroComponent: () => import('~/components/HeroComponent.vue'),
