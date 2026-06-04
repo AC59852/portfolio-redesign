@@ -37,3 +37,9 @@
   flex: 1 0 auto;
   width: 250px;
 }
+
+.work {
+  &__images {
+    margin-bottom: 125px;
+  }
+}

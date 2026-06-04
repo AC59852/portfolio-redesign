@@ -51,10 +51,7 @@ export default {
     },
 
     handleScroll() {
-      console.log("scrolling")
       this.hasScrolled = window.scrollY >= 90;
-
-      console.log(this.hasScrolled);
     }
   },
 }
